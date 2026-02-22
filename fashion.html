@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>أزياء المناطق السعودية</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --primary:#2f5d50;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;font-family:"Segoe UI",Tahoma,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+header{
+  background:linear-gradient(135deg,#2f5d50,#3f7c6a);
+  color:#fff;padding:40px 20px;text-align:center;
+}
+header h1{margin:0 0 10px;font-size:32px;}
+header p{margin:0;color:#e5f3ef}
+
+.container{max-width:1200px;margin:auto;padding:30px 20px 60px;}
+
+.section-title{
+  display:flex;align-items:center;gap:12px;margin:20px 0 20px;
+  border-right:6px solid var(--primary);padding-right:12px;
+}
+.section-title h2{margin:0;font-size:26px;color:var(--primary);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:20px;
+}
+
+/* زر الرجوع */
+.back-wrap{margin-bottom:25px;text-align:center;}
+.back-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#1f4037,#2f5d50);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:14px;
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
+  transition:.25s ease;
+}
+.back-btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.25);}
+
+/* Flip Cards */
+.flip-card{perspective:1200px;transition:transform .3s ease;}
+.flip-card:hover{transform:translateY(-8px);}
+
+.flip-inner{
+  position:relative;
+  width:100%;
+  height:340px;
+  transition:transform .7s;
+  transform-style:preserve-3d;
+  cursor:pointer;
+}
+.flip-card.active .flip-inner{transform:rotateY(180deg);}
+
+.flip-front,.flip-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  border:1px solid var(--border);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.flip-front img,.flip-back img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  background:#ddd;
+}
+
+.card-body{padding:16px 18px 20px;}
+.card-body h3{margin:0 0 8px;font-size:18px;}
+
+.badge{
+  display:inline-block;
+  font-size:12px;
+  background:#eef6f3;
+  color:var(--primary);
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+
+.card-body p{margin:0;color:var(--muted);font-size:14px;}
+
+.flip-back{
+  transform:rotateY(180deg);
+  background:#fdfdfb;
+}
+.flip-back .card-body p{color:#374151;}
+
+footer{text-align:center;color:#6b7280;padding:20px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>أزياء المناطق السعودية</h1>
+  <p>عرض مبسّط للأزياء التقليدية في مناطق المملكة</p>
+</header>
+
+<div class="container">
+
+  <div class="back-wrap">
+    <a href="index.html" class="back-btn">⬅ الرجوع للصفحة الرئيسية</a>
+  </div>
+
+  <div class="section-title">
+    <h2>👗 أزياء المناطق</h2>
+  </div>
+
+  <div class="grid">
+
+    <!-- المنطقة الوسطى -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/najd-fashion.jpg" alt="زي المنطقة الوسطى">
+          <div class="card-body">
+            <span class="badge">المنطقة الوسطى</span>
+            <h3>زي نجد التقليدي</h3>
+            <p>زي يعكس بساطة وأناقة أهل نجد في حياتهم اليومية والمناسبات.</p>
+          </div>
+        </div>
+        <div class="flip-back">
+          <img src="images/najd-fashion-old.jpg" alt="زي نجد قديمًا">
+          <div class="card-body">
+            <h3>زي نجد قديمًا</h3>
+            <p>كان اللباس يعتمد على الأقمشة المتوفرة ويعبر عن البيئة الصحراوية والاستقرار في نجد.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- المنطقة الغربية -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/hijaz-fashion.jpg" alt="زي المنطقة الغربية">
+          <div class="card-body">
+            <span class="badge">المنطقة الغربية</span>
+            <h3>زي الحجاز التقليدي</h3><p>زي يتميز بالأناقة والتنوع تأثرًا بالحجاج والتجارة.</p>
+          </div>
+        </div>
+        <div class="flip-back">
+          <img src="images/hijaz-fashion-old.jpg" alt="زي الحجاز قديمًا">
+          <div class="card-body">
+            <h3>زي الحجاز قديمًا</h3>
+            <p>كان يعكس مكانة الحجاز الدينية والتجارية وتنوع الثقافات فيه.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- المنطقة الجنوبية -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/south-fashion.jpg" alt="زي المنطقة الجنوبية">
+          <div class="card-body">
+            <span class="badge">المنطقة الجنوبية</span>
+            <h3>الزي الجنوبي التقليدي</h3>
+            <p>زي ملون ومميز يعكس طبيعة الجبال والتراث المحلي.</p>
+          </div>
+        </div>
+        <div class="flip-back">
+          <img src="images/south-fashion-old.jpg" alt="الزي الجنوبي قديمًا">
+          <div class="card-body">
+            <h3>الزي الجنوبي قديمًا</h3>
+            <p>ارتبط بالبيئة الجبلية والزراعة وأسلوب الحياة في جنوب المملكة.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- المنطقة الشرقية -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/east-fashion.jpg" alt="زي المنطقة الشرقية">
+          <div class="card-body">
+            <span class="badge">المنطقة الشرقية</span>
+            <h3>زي الشرق التقليدي</h3>
+            <p>زي تأثر بالبيئة الساحلية والتجارة البحرية.</p>
+          </div>
+        </div>
+        <div class="flip-back">
+          <img src="images/east-fashion-old.jpg" alt="زي الشرق قديمًا">
+          <div class="card-body">
+            <h3>زي الشرق قديمًا</h3>
+            <p>كان يعكس ارتباط المنطقة بالبحر والتجارة والغوص على اللؤلؤ.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- المنطقة الشمالية -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/north-fashion.jpg" alt="زي المنطقة الشمالية">
+          <div class="card-body">
+            <span class="badge">المنطقة الشمالية</span>
+            <h3>الزي الشمالي التقليدي</h3>
+            <p>زي عملي يناسب طبيعة البادية والمناطق المفتوحة.</p>
+          </div>
+        </div>
+        <div class="flip-back">
+          <img src="images/north-fashion-old.jpg" alt="الزي الشمالي قديمًا">
+          <div class="card-body">
+            <h3>الزي الشمالي قديمًا</h3>
+            <p>كان يعبر عن حياة البادية والتنقل والتكيف مع البيئة الصحراوية.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- كرت جديد -->
+<div class="flip-card">
+  <div class="flip-inner">
+    <div class="flip-front">
+      <img src="images/new-fashion.jpg" alt="اسم الزي">
+      <div class="card-body">
+        <span class="badge">اسم المنطقة</span>
+        <h3>اسم الزي</h3>
+        <p>وصف مختصر للزي الحديث.</p>
+      </div>
+    </div>
+    <div class="flip-back">
+      <img src="images/new-fashion-old.jpg" alt="اسم الزي قديمًا">
+      <div class="card-body">
+        <h3>اسم الزي تاريخيًا</h3>
+        <p>وصف تاريخي مختصر عن الزي قديمًا.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<footer>
+  © مشروع يوم التأسيس – أزياء المناطق
+</footer>
+
+<script>
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>

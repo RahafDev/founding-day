@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>أزياء يوم التأسيس</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --primary:#2f5d50;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;font-family:"Segoe UI",Tahoma,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+header{
+  background:linear-gradient(135deg,#2f5d50,#3f7c6a);
+  color:#fff;
+  padding:40px 20px;
+  text-align:center;
+}
+header h1{margin:0 0 10px;font-size:32px;}
+header p{margin:0;color:#e5f3ef}
+
+.container{max-width:1200px;margin:auto;padding:30px 20px 60px;}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:30px 0 20px;
+  border-right:6px solid var(--primary);
+  padding-right:12px;
+}
+.section-title h2{margin:0;font-size:26px;color:var(--primary);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:20px;
+}
+
+/* Flip Cards */
+.flip-card{perspective:1200px;transition:transform .3s ease;}
+.flip-card:hover{transform:translateY(-6px);}
+
+.flip-inner{
+  position:relative;
+  width:100%;
+  height:340px;
+  transition:transform .7s;
+  transform-style:preserve-3d;
+  cursor:pointer;
+}
+.flip-card.active .flip-inner{transform:rotateY(180deg);}
+
+.flip-front,.flip-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  border:1px solid var(--border);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.flip-front img,.flip-back img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  background:#ddd;
+}
+
+.card-body{padding:16px 18px 20px;}
+.card-body h3{margin:0 0 8px;font-size:18px;}
+
+.badge{
+  display:inline-block;
+  font-size:12px;
+  background:#eef6f3;
+  color:var(--primary);
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+
+.card-body p{margin:0;color:var(--muted);font-size:14px;}
+
+.flip-back{
+  transform:rotateY(180deg);
+  background:#fdfdfb;
+}
+.flip-back .card-body p{color:#374151;}
+
+footer{text-align:center;color:#6b7280;padding:20px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>أزياء يوم التأسيس</h1>
+  <p>الأزياء التقليدية لمناطق المملكة العربية السعودية</p>
+</header>
+
+<div class="container">
+
+<!-- هنا بنبدأ نضيف المناطق والأزياء -->
+<!-- ================= أزياء المنطقة الوسطى (نجد) ================= -->
+<div class="section-title"><h2>👗 أزياء المنطقة الوسطى (نجد)</h2></div>
+<div class="grid">
+
+<!-- الزي النجدي الرجالي -->
+<div class="card">
+  <img src="images/najdi-men.jpg" alt="الزي النجدي الرجالي">
+  <div class="card-body">
+    <span class="badge">نجد</span>
+    <h3>الزي النجدي (رجالي)</h3>
+    <p>زي تقليدي يتكون من الثوب والغترة والعقال، ويعكس هوية المنطقة الوسطى.</p>
+  </div>
+</div>
+
+<!-- الزي النجدي النسائي -->
+<div class="card">
+  <img src="images/najdi-women.jpg" alt="الزي النجدي النسائي">
+  <div class="card-body">
+    <span class="badge">نجد</span>
+    <h3>الزي النجدي (نسائي)</h3>
+    <p>زي تقليدي يتميز بالثوب المزخرف والشيلة، ويعبر عن تراث نجد.</p>
+  </div>
+</div>
+
+<!-- البشت -->
+<div class="card">
+  <img src="images/bisht.jpg" alt="البشت">
+  <div class="card-body">
+    <span class="badge">رجالي</span>
+    <h3>البشت</h3>
+    <p>لباس رسمي يُلبس في المناسبات ويُعد رمزًا للهيبة والمكانة.</p>
+  </div>
+</div>
+
+<!-- الشماغ والغترة -->
+<div class="card">
+  <img src="images/shmagh-ghutra.jpg" alt="الشماغ والغترة">
+  <div class="card-body">
+    <span class="badge">إكسسوارات</span>
+    <h3>الشماغ والغترة</h3>
+    <p>غطاء رأس تقليدي يُستخدم في نجد وباقي مناطق المملكة.</p>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+  © مشروع يوم التأسيس – الأزياء
+</footer>
+
+<script>
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>

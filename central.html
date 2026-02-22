@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>المنطقة الوسطى</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --primary:#2f5d50;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;font-family:"Segoe UI",Tahoma,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+header{
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;padding:40px 20px;text-align:center;
+}
+header h1{margin:0 0 10px;font-size:32px;}
+header p{margin:0;color:#e5f3ef}
+
+.container{max-width:1200px;margin:auto;padding:30px 20px 60px;}
+.back-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 30px;
+}
+
+.back-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:14px;
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
+  transition:.25s ease;
+}
+.back-btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.25);}
+
+.section-title{
+  display:flex;align-items:center;gap:12px;margin:20px 0 20px;
+  border-right:6px solid var(--primary);padding-right:12px;
+}
+.section-title h2{margin:0;font-size:26px;color:var(--primary);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:20px;
+}
+
+/* Flip Cards */
+.flip-card{perspective:1200px;transition:transform .3s ease;}
+.flip-card:hover{transform:translateY(-8px);}
+
+.flip-inner{
+  position:relative;
+  width:100%;
+  height:340px;
+  transition:transform .7s;
+  transform-style:preserve-3d;
+  cursor:pointer;
+}
+.flip-card.active .flip-inner{transform:rotateY(180deg);}
+
+.flip-front,.flip-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  border:1px solid var(--border);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.flip-front img,.flip-back img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  background:#ddd;
+}
+
+.card-body{padding:16px 18px 20px;}
+.card-body h3{margin:0 0 8px;font-size:18px;}
+
+.badge{
+  display:inline-block;
+  font-size:12px;
+  background:#eef6f3;
+  color:var(--primary);
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+
+.card-body p{margin:0;color:var(--muted);font-size:14px;}
+
+.flip-back{
+  transform:rotateY(180deg);
+  background:#fdfdfb;
+}
+.flip-back .card-body p{color:#374151;}
+
+footer{text-align:center;color:#6b7280;padding:20px;font-size:13px;}
+</style>
+</head>
+<body>
+</style>
+</head>
+<body>
+
+<header>
+  <h1>المنطقة الوسطى</h1>
+  <p>مدن ومحافظات قلب المملكة العربية السعودية وما تشتهر به</p>
+</header>
+
+<div class="container">
+
+<!-- ================= منطقة الرياض ================= -->
+<div class="section-title"><h2>📍 منطقة الرياض</h2></div>
+<div class="grid">
+
+<!-- استخدمي نفس الصورة مؤقتاً لو ما عندك صورة قديمة -->
+
+<!-- الرياض -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/riyadh.jpg"><div class="card-body"><span class="badge">العاصمة</span><h3>الرياض</h3><p>عاصمة المملكة، مركز سياسي واقتصادي وثقافي، تضم معالم حديثة وتاريخية.</p></div></div>
+<div class="flip-back"><img src="images/riyadh-old.jpg"><div class="card-body"><h3>الرياض تاريخيًا</h3><p>القصر الملكي في الرياض مطلع القرن العشرين، التُقطت الصورة قرابة عام 1917م بعدسة المستكشف هاري سانت جون فيلبي.</p></div></div>
+</div></div>
+
+<!-- الدرعية -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/diriyah.jpg"><div class="card-body"><span class="badge">تاريخية</span><h3>الدرعية</h3><p>مهد الدولة السعودية الأولى، تشتهر بحي الطريف.</p></div></div>
+<div class="flip-back"><img src="images/diriyah-old.jpg"><div class="card-body"><h3>الدرعية تاريخيًا</h3><p>كانت عاصمة الدولة السعودية الأولى ومركز الحكم والإدارة في بدايات التأسيس.</p></div></div>
+</div></div>
+
+<!-- الخرج -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/alkharj.jpg"><div class="card-body"><span class="badge">زراعية</span><h3>الخرج</h3><p>تشتهر بالزراعة وإنتاج الألبان والخضروات.</p></div></div>
+<div class="flip-back"><img src="images/alkharj-old.jpg"><div class="card-body"><h3>الخرج تاريخيًا</h3><p> صورة أرشيفية من محافظة الخرج عام 1960م، تُجسّد جهود المزارعين وأساليب الزراعة التقليدية
+</p></div></div>
+</div></div>
+<!-- الدوادمي -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/dawadmi.jpg"><div class="card-body"><span class="badge">نجد</span><h3>الدوادمي</h3><p>محافظة في وسط نجد تشتهر بالموقع والطرق البرية.</p></div></div>
+<div class="flip-back"><img src="images/dawadmi-old.jpg"><div class="card-body"><h3>الدوادمي تاريخيًا</h3><p>مشهد تاريخي من الدوادمي يُظهر القلعة والمباني الطينية، ويعكس ملامح العمارة والحياة في نجد قديماً     </p></div></div>
+</div></div>
+
+<!-- المجمعة -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/majmaah.jpg"><div class="card-body"><span class="badge">تراثية</span><h3>المجمعة</h3><p>مدينة تاريخية في سدير معروفة بالتراث.</p></div></div>
+<div class="flip-back"><img src="images/majmaah-old.jpg"><div class="card-body"><h3>المجمعة تاريخيًا</h3><p>كانت من مدن سدير المهمة ومركزًا تجاريًا قديمًا.</p></div></div>
+</div></div>
+
+
+
+<!-- الأفلاج -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/aflaj.jpg"><div class="card-body"><span class="badge">زراعة</span><h3>الأفلاج</h3><p>من أقدم المناطق الزراعية، تشتهر بالعيون والنخيل.</p></div></div>
+<div class="flip-back"><img src="images/aflaj-old.jpg"><div class="card-body"><h3>الأفلاج تاريخيًا</h3><p>واحة زراعية قديمة اعتمد عليها سكان نجد منذ قرون.</p></div></div>
+</div></div>
+
+<!-- وادي الدواسر -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/wadi-dawasir.jpg"><div class="card-body"><span class="badge">واحات</span><h3>وادي الدواسر</h3><p>تشتهر بالزراعة والنخيل والواحات.</p></div></div>
+<div class="flip-back"><img src="images/wadi-dawasir-old.jpg"><div class="card-body"><h3>وادي الدواسر تاريخيًا</h3><p>من أقدم مناطق الاستقرار الزراعي في جنوب نجد,التقطت الصورةفي عام 1975م</p></div></div>
+</div></div>
+
+<!-- الزلفي -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/zulfi.jpg"><div class="card-body"><span class="badge">طبيعة</span><h3>الزلفي</h3><p>تشتهر بنفودها وطبيعتها الصحراوية.</p></div></div>
+<div class="flip-back"><img src="images/zulfi-old.jpg"><div class="card-body"><h3>الزلفي تاريخيًا</h3><p>كانت محطة على طرق القوافل القديمة في نجد.</p></div></div>
+</div></div>
+
+<!-- شقراء -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/shaqra.jpg"><div class="card-body"><span class="badge">تراث</span><h3>شقراء</h3><p>مدينة تراثية تشتهر بالبيوت الطينية.</p></div></div>
+<div class="flip-back"><img src="images/shaqra-old.jpg"><div class="card-body"><h3>شقراء تاريخيًا</h3><p>من مدن الوشم المهمة ومركز علمي وتجاري قديم,التقطت في عام 1928م</p></div></div>
+</div></div>
+
+<!-- حوطة بني تميم -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/hawtat.jpg"><div class="card-body"><span class="badge">جنوب الرياض</span><h3>حوطة بني تميم</h3><p>محافظة زراعية في جنوب المنطقة.</p></div></div>
+<div class="flip-back"><img src="images/hawtat-old.jpg"><div class="card-body"><h3>حوطة بني تميم تاريخيًا</h3><p>من أقدم مدن جنوب نجد ومعروفة بالزراعة والاستقرار.</p></div></div>
+</div></div>
+
+<!-- عفيف -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/afif.jpg"><div class="card-body"><span class="badge">طرق برية</span><h3>عفيف</h3><p>محافظة تقع غرب الرياض وتخدم الطرق البرية.</p></div></div>
+<div class="flip-back"><img src="images/afif-old.jpg"><div class="card-body"><h3>عفيف تاريخيًا</h3><p>كانت محطة مهمة للمسافرين والقوافل.</p></div></div>
+</div></div>
+
+<!-- الغاط -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/ghat.jpg"><div class="card-body"><span class="badge">سدير</span><h3>الغاط</h3><p>مدينة صغيرة في سدير تشتهر بالزراعة.</p></div></div>
+<div class="flip-back"><img src="images/ghat-old.jpg"><div class="card-body"><h3>الغاط تاريخيًا</h3><p>من بلدات سدير القديمة والاستقرار المبكر.</p></div></div>
+</div></div>
+
+<!-- السليل -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/sulayl.jpg"><div class="card-body"><span class="badge">جنوب نجد</span><h3>السليل</h3><p>محافظة جنوبية تشتهر بالزراعة والرعي.</p></div></div>
+<div class="flip-back"><img src="images/sulayl-old.jpg"><div class="card-body"><h3>السليل تاريخيًا</h3><p> بناء منزل جديد في السليل عام 1975م.  </p></div></div>
+</div></div>
+
+<!-- ضرما -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/dhurma.jpg"><div class="card-body"><span class="badge">الوشم</span><h3>ضرما</h3><p>مدينة قريبة من الرياض ذات طابع زراعي.</p></div></div>
+<div class="flip-back"><img src="images/dhurma-old.jpg"><div class="card-body"><h3>ضرما تاريخيًا</h3><p>من بلدات الوشم القديمة ولها تاريخ زراعي.</p></div></div>
+</div></div>
+
+<!-- المزاحمية -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/muzahimiyah.jpg"><div class="card-body"><span class="badge">قرب الرياض</span><h3>المزاحمية</h3><p>محافظة قريبة من الرياض تشهد توسعًا عمرانيًا.</p></div></div>
+<div class="flip-back"><img src="images/muzahimiyah-old.jpg"><div class="card-body"><h3>المزاحمية تاريخيًا</h3><p>كانت قرية زراعية صغيرة ثم تطورت مع الزمن.</p></div></div>
+</div></div>
+
+
+
+<!-- ثادق -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/thadiq.jpg"><div class="card-body"><span class="badge">سدير</span><h3>ثادق</h3><p>مدينة في سدير تشتهر بالزراعة.</p></div></div>
+<div class="flip-back"><img src="images/thadiq-old.jpg"><div class="card-body"><h3>ثادق تاريخيًا</h3><p>  مشهد قديم من بلدة ثادق.</p></div></div>
+</div></div>
+
+<!-- حريملاء -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/huraymila.jpg"><div class="card-body"><span class="badge">وادي حنيفة</span><h3>حريملاء</h3><p>مدينة تاريخية في وادي حنيفة.</p></div></div>
+<div class="flip-back"><img src="images/huraymila-old.jpg"><div class="card-body"><h3>حريملاء تاريخيًا</h3><p>من بلدات نجد القديمة واشتهرت بالعلم والزراعة.</p></div></div>
+</div></div>
+
+<!-- الحريق -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/alhariq.jpg"><div class="card-body"><span class="badge">زراعة</span><h3>الحريق</h3><p>محافظة زراعية جنوب الرياض.</p></div></div>
+<div class="flip-back"><img src="images/alhariq-old.jpg"><div class="card-body"><h3>الحريق تاريخيًا</h3><p>من أقدم بلدات جنوب نجد ومعروفة بزراعتها.</p></div></div>
+</div></div>
+
+<!-- مرات -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/marat.jpg"><div class="card-body"><span class="badge">الوشم</span><h3>مرات</h3><p>مدينة في إقليم الوشم ذات طابع زراعي.</p></div></div>
+<div class="flip-back"><img src="images/marat-old.jpg"><div class="card-body"><h3>مرات تاريخيًا</h3><p>كانت مركزًا علميًا وتجاريًا في الوشم,التقطت في 1945م.</p></div></div>
+</div></div>
+
+
+
+
+
+</div>
+
+<!-- ================= منطقة القصيم ================= -->
+<div class="section-title"><h2>📍 منطقة القصيم</h2></div>
+<div class="grid">
+
+<!-- بريدة -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/buraidah.jpg"><div class="card-body"><span class="badge">التمور</span><h3>بريدة</h3><p>عاصمة القصيم، تشتهر بالزراعة وسوق التمور.</p></div></div>
+<div class="flip-back"><img src="images/buraidah-old.jpg"><div class="card-body"><h3>بريدة تاريخيًا</h3><p> سوق التمر في بريدة، أكتوبر 1970م – مشهد من الأسواق الشعبية يوضح طريقة وزن التمور بالميزان التقليدي   </p></div></div>
+</div></div>
+
+<!-- عنيزة -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/unaizah.jpg"><div class="card-body"><span class="badge">ثقافة</span><h3>عنيزة</h3><p>مدينة ثقافية وتجارية معروفة بالمهرجانات.</p></div></div>
+<div class="flip-back"><img src="images/unaizah-old.jpg"><div class="card-body"><h3>عنيزة تاريخيًا</h3><p>   التقطت الصورة عام 1918 ونُشرت في الثامن من نوفمبر عام 1919 في صحيفة أخبار لندن المصورة.</p></div></div>
+</div></div>
+
+<!-- الرس -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/arrass.jpg"><div class="card-body"><span class="badge">تاريخ</span><h3>الرس</h3><p>من المحافظات التاريخية في القصيم.</p></div></div>
+<div class="flip-back"><img src="images/arrass-old.jpg"><div class="card-body"><h3>الرس تاريخيًا</h3><p>برج الشنانة معلم أثري في القصيم قرب الرس، يعود بناؤه لأواخر القرن الثامن عشر الميلادي، ويُعد من أبرز أبراج المراقبة التاريخية المرتبطة بتاريخ توحيد المملكة.</p></div></div>
+</div></div>
+
+<!-- المذنب -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/almithnab.jpg"><div class="card-body"><span class="badge">تراث</span><h3>المذنب</h3><p>مدينة تراثية معروفة بأسواقها.</p></div></div>
+<div class="flip-back"><img src="images/almithnab-old.jpg"><div class="card-body"><h3>المذنب تاريخيًا</h3><p>اشتهرت بالزراعة والأسواق الشعبية قديمًا ,التقطت في عام 1928م.</p></div></div>
+</div></div>
+
+<!-- البكيرية -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/albukairiyah.jpg"><div class="card-body"><span class="badge">زراعة</span><h3>البكيرية</h3><p>تشتهر بالزراعة والمنتجات المحلية.</p></div></div>
+<div class="flip-back"><img src="images/albukairiyah-old.jpg"><div class="card-body"><h3>البكيرية تاريخيًا</h3><p>وقعت معركة البكيرية عام 1904م في القصيم بين قوات الملك عبدالعزيز وآل رشيد، وانتهت بانتصار الملك عبدالعزيز وكان لها دور مهم في تعزيز نفوذه في نجد ضمن مسيرة توحيد البلاد. صورةلمدافع العثمانين بعد هروبهم.</p></div></div>
+</div></div>
+
+<!-- البدائع -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/albadayea.jpg"><div class="card-body"><span class="badge">زراعة</span><h3>البدائع</h3><p>تشتهر بالنخيل والمنتجات الزراعية.</p></div></div>
+<div class="flip-back"><img src="images/albadayea-old.jpg"><div class="card-body"><h3>البدائع تاريخيًا</h3><p>من المناطق الزراعية المعروفة في القصيم.</p></div></div>
+</div></div>
+
+<!-- الأسياح -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/alasyah.jpg"><div class="card-body"><span class="badge">شمال القصيم</span><h3>الأسياح</h3><p>محافظة زراعية في شمال القصيم.</p></div></div>
+<div class="flip-back"><img src="images/alasyah-old.jpg"><div class="card-body"><h3>الأسياح تاريخيًا</h3><p>  مسجد البرقاء في محافظة الأسياح ,بُني على يد الشيخ فهد بن تركي الفهيد آل فهيد في عام  1905 م، وكان هو الإمام الذي يُصلي فيه حتى تحول المسجد إلى جامع عام 1915م وخُطب فيه الجمعة.</p></div></div>
+</div></div>
+
+<!-- النبهانية -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/alnabhaniyah.jpg"><div class="card-body"><span class="badge">قصيم</span><h3>النبهانية</h3><p>محافظة هادئة تشتهر بالزراعة.</p></div></div>
+<div class="flip-back"><img src="images/alnabhaniyah-old.jpg"><div class="card-body"><h3>النبهانية تاريخيًا</h3><p>اعتمد أهلها قديمًا على الزراعة وتربية المواشي.</p></div></div>
+</div></div>
+
+<!-- الشماسية -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/alshimasiyah.jpg"><div class="card-body"><span class="badge">قرب بريدة</span><h3>الشماسية</h3><p>مدينة قريبة من بريدة ذات طابع زراعي.</p></div></div>
+<div class="flip-back"><img src="images/alshimasiyah-old.jpg"><div class="card-body"><h3>الشماسية تاريخيًا</h3><p>من القرى القديمة التابعة لبريدة.</p></div></div>
+</div></div>
+
+<!-- عيون الجواء -->
+<div class="flip-card"><div class="flip-inner">
+<div class="flip-front"><img src="images/uyun-aljiwa.jpg"><div class="card-body"><span class="badge">مياه</span><h3>عيون الجواء</h3><p>سميت بكثرة عيون الماء فيها.</p></div></div>
+<div class="flip-back"><img src="images/uyun-aljiwa-old.jpg"><div class="card-body"><h3>عيون الجواء تاريخيًا</h3><p>وقد كانت هذه البلدة (قديماً) هي محطة هامة لانطلاق قوافل التجارة المتجهة إلى العراق وبلاد الشام ومصر. </p></div></div>
+</div></div>
+
+
+</div>
+ 
+</div>
+
+<div class="back-wrap">
+    <a href="regions.html" class="back-btn"> الرجوع إلى صفحة المناطق</a>
+  </div>
+
+<footer> مشروع يوم التأسيس – المنطقة الوسطى</footer>
+
+<script>
+document.querySelectorAll('.flip-card').forEach(card=>{
+  card.addEventListener('click',()=>{
+    card.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>

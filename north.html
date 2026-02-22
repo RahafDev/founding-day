@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>المنطقة الشمالية</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --primary:#2f5d50;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;font-family:"Segoe UI",Tahoma,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+header{
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;padding:40px 20px;text-align:center;
+}
+header h1{margin:0 0 10px;font-size:32px;}
+header p{margin:0;color:#e5f3ef}
+
+.container{max-width:1200px;margin:auto;padding:30px 20px 60px;}
+
+.back-wrap{margin-bottom:25px;text-align:center;}
+.back-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:14px;
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
+  transition:.25s ease;
+}
+.back-btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.25);}
+
+.section-title{
+  display:flex;align-items:center;gap:12px;margin:20px 0 20px;
+  border-right:6px solid var(--primary);padding-right:12px;
+}
+.section-title h2{margin:0;font-size:26px;color:var(--primary);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:20px;
+}
+
+/* Flip Cards */
+.flip-card{perspective:1200px;transition:transform .3s ease;}
+.flip-card:hover{transform:translateY(-8px);}
+
+.flip-inner{
+  position:relative;
+  width:100%;
+  height:340px;
+  transition:transform .7s;
+  transform-style:preserve-3d;
+  cursor:pointer;
+}
+.flip-card.active .flip-inner{transform:rotateY(180deg);}
+
+.flip-front,.flip-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  border:1px solid var(--border);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.flip-front img,.flip-back img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  background:#ddd;
+}
+
+.card-body{padding:16px 18px 20px;}
+.card-body h3{margin:0 0 8px;font-size:18px;}
+
+.badge{
+  display:inline-block;
+  font-size:12px;
+  background:#eef6f3;
+  color:var(--primary);
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+
+.card-body p{margin:0;color:var(--muted);font-size:14px;}
+
+.flip-back{
+  transform:rotateY(180deg);
+  background:#fdfdfb;
+}
+.flip-back .card-body p{color:#374151;}
+
+footer{text-align:center;color:#6b7280;padding:20px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>المنطقة الشمالية</h1>
+  <p>مدن ومحافظات شمال المملكة العربية السعودية</p>
+</header>
+
+<div class="container">
+
+ 
+
+   <!-- =================== تبوك =================== -->
+  <div class="section-title"><h2>📍 منطقة تبوك</h2></div>
+  <div class="grid">
+
+    <!-- تبوك -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/tabuk.jpg" alt="تبوك">
+        <div class="card-body">
+          <span class="badge">عاصمة المنطقة</span>
+          <h3>تبوك</h3>
+          <p>مدينة شمالية وبوابة للشمال الغربي، مركز إداري وخدمي وسياحي.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/tabuk-old.jpg" alt="تبوك قديمًا">
+        <div class="card-body">
+          <h3>تبوك تاريخيًا</h3>
+          <p>الرجال مع جمالهم، موقع الصورة قرب ابوراكة بمنطقة تبوك. التقطت الصوره عام 1917م .</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الوجه -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/alwajh.jpg" alt="الوجه">
+        <div class="card-body">
+          <span class="badge">ساحلية</span>
+          <h3>الوجه</h3>
+          <p>مدينة ساحلية تاريخية وميناء مهم في شمال البحر الأحمر.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/alwajh-old.jpg" alt="الوجه قديمًا">
+        <div class="card-body">
+          <h3>الوجه تاريخيًا</h3>
+          <p>  صورة لافراد من قبيلة عتيبه وهم في الوجه,التقط هذه الصورة العقيد البريطاني ستيوارت نيوكومب في سنة 1917م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- ضباء -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/duba.jpg" alt="ضباء">
+        <div class="card-body">
+          <span class="badge">ساحلية</span>
+          <h3>ضباء</h3>
+          <p>مدينة ساحلية تشتهر بالميناء والصيد.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/duba-old.jpg" alt="ضباء قديمًا">
+        <div class="card-body">
+          <h3>ضباء تاريخيًا</h3>
+          <p>قلعة الأزلم أو الأزنم، هي حصن تاريخي، يعود تاريخ بنائها إلى القرن الرابع عشر الميلادي، موقع يُعرف بالأزنم كان مخصصًا لاستراحة الحجاج المسافرين إلى مكة .</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- تيماء -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/tayma.jpg" alt="تيماء">
+        <div class="card-body">
+          <span class="badge">واحة</span>
+          <h3>تيماء</h3>
+          <p>واحة تاريخية تشتهر بالآثار والزراعة والموقع الاستراتيجي.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/tayma-old.jpg" alt="تيماء قديمًا">
+        <div class="card-body">
+          <h3>تيماء تاريخيًا</h3>
+          <p>دخلت ضمن نطاق الدولة السعودية الأولى في توسعها شمال الجزيرة.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- أملج -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/umlaj.jpg" alt="أملج">
+        <div class="card-body">
+          <span class="badge">ساحلية</span>
+          <h3>أملج</h3>
+          <p>مدينة ساحلية سياحية تشتهر بالجزر والشعاب المرجانية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/umlaj-old.jpg" alt="أملج قديمًا">
+        <div class="card-body">
+          <h3>أملج تاريخيًا</h3>
+          <p>كانت مرفأً للصيد والتجارة على الساحل في عهد الدولة السعودية الأولى.</p>
+        </div>
+      </div>
+    </div></div>
+
+   
+
+    <!-- البدع -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/al-badaa.jpg" alt="البدع">
+        <div class="card-body">
+          <span class="badge">قرى تاريخية</span>
+          <h3>البدع</h3>
+          <p>محافظة تضم قرى تاريخية وتشتهر بالمواقع الأثرية والطبيعة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/al-badaa-old.jpg" alt="البدع قديمًا">
+        <div class="card-body">
+          <h3>البدع تاريخيًا</h3>
+          <p> مدائن شعيب .  </p>
+        </div>
+      </div>
+    </div></div>
+
+  </div>
+
+<!-- =================== منطقة حائل =================== -->
+  <div class="section-title"><h2>📍 منطقة حائل</h2></div>
+  <div class="grid">
+
+    <!-- حائل -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/hail.jpg" alt="حائل">
+        <div class="card-body">
+          <span class="badge">عاصمة المنطقة</span>
+          <h3>حائل</h3>
+          <p>مدينة جبلية ومركز إداري وتجاري لشمال نجد، تشتهر بالتراث والطبيعة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/hail-old.jpg" alt="حائل قديمًا">
+        <div class="card-body">
+          <h3>حائل تاريخيًا</h3>
+          <p>مشهد تاريخي لجانب من قصر برزان والمسجد الجامع في مدينة حائل، التقطته عدسة الرحالة البريطانية جيرترود بيل عام 1914م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- بقعاء -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/baqaa.jpg" alt="بقعاء">
+        <div class="card-body">
+          <span class="badge">زراعة</span>
+          <h3>بقعاء</h3>
+          <p>محافظة زراعية واسعة تشتهر بالقمح والنخيل.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/baqaa-old.jpg" alt="بقعاء قديمًا">
+        <div class="card-body">
+          <h3>بقعاء تاريخيًا</h3>
+          <p>نقش صخري للخيل العربية قبل ٢٥٠٠ عام في ( محافظة بقعاء ).</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الغزالة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/alghazalah.jpg" alt="الغزالة">
+        <div class="card-body">
+          <span class="badge">محافظة</span>
+          <h3>الغزالة</h3>
+          <p>محافظة ذات موقع يربط حائل بمناطق الشمال.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/alghazalah-old.jpg" alt="الغزالة قديمًا">
+        <div class="card-body">
+          <h3>الغزالة تاريخيًا</h3>
+          <p>سور الإمام تركي بن عبدالله سور أثري في الغزالة بحائل، بُني للدفاع خلال عهد الدولة السعودية الثانية.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الشنان -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/alshinan.jpg" alt="الشنان">
+        <div class="card-body">
+          <span class="badge">زراعة</span>
+          <h3>الشنان</h3>
+          <p>محافظة تشتهر بالزراعة والقرى الريفية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/alshinan-old.jpg" alt="الشنان قديمًا">
+        <div class="card-body">
+          <h3>الشنان تاريخيًا</h3>
+          <p>مدينة فيد في محافظة الشنان. كانت محطة مهمة على درب زبيدة (طريق الحج القديم بين العراق ومكة)، وتشتهر بآثارها الإسلامية مثل البرك والآبار لخدمة الحجاج. </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الحائط -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/alhait.jpg" alt="الحائط">
+        <div class="card-body">
+          <span class="badge">تراث</span>
+          <h3>الحائط</h3>
+          <p>محافظة تضم مواقع أثرية وقلاع تاريخية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/alhait-old.jpg" alt="الحائط قديمًا">
+        <div class="card-body">
+          <h3>الحائط تاريخيًا</h3>
+          <p> تمثل نقوش الحائط إرثًا تاريخيًا قديمًا يعود بعضها إلى القرن السادس قبل الميلاد، وتعد من أقدم الشواهد الأثرية في المنطقة.
+                  </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- السليمي -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/alsulaimi.jpg" alt="السليمي">
+        <div class="card-body">
+          <span class="badge">محافظة</span>
+          <h3>السليمي</h3>
+          <p>محافظة تقع على طرق تربط حائل بالمناطق المجاورة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/alsulaimi-old.jpg" alt="السليمي قديمًا">
+        <div class="card-body">
+          <h3>السليمي تاريخيًا</h3>
+          <p> بناها الشيخ صالح بن طويهر (رحمه الله).
+التاريخ: يعود بناؤها إلى عام 1941م .</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الشملي -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+<img src="images/alshamli.jpg" alt="الشملي">
+        <div class="card-body">
+          <span class="badge">طرق</span>
+          <h3>الشملي</h3>
+          <p>محافظة تقع على طرق تربط حائل بتبوك والمدينة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/alshamli-old.jpg" alt="الشملي قديمًا">
+        <div class="card-body">
+          <h3>الشملي تاريخيًا</h3>
+          <p>جبل محجّة يقع في منطقة الشملي , ويُعد من المعالم الطبيعية المميزة   .  
+            وكان قديمًا علامة يهتدي بها المسافرون والقوافل في طرق التجارة القديمة.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- موقق -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/mawqaq.jpg" alt="موقق">
+        <div class="card-body">
+          <span class="badge">محافظة</span>
+          <h3>موقق</h3>
+          <p>محافظة ذات طابع ريفي وتخدم القرى المحيطة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/mawqaq-old.jpg" alt="موقق قديمًا">
+        <div class="card-body">
+          <h3>موقق تاريخيًا</h3>
+          <p>وقعة موقّق كانت معركة في عام 1910م قرب موقّق، بين قوات الشريف حسين بن علي المدعومة عثمانيًا وقبيلة شمر بقيادة شايع بن مرادس، وانتهت بانتصار شمر. </p>
+        </div>
+      </div>
+    </div></div>
+
+    
+
+  </div>
+
+<!-- =================== منطقة الجوف =================== -->
+  <div class="section-title"><h2>📍 منطقة الجوف</h2></div>
+  <div class="grid">
+
+    <!-- سكاكا -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/sakaka.jpg" alt="سكاكا">
+        <div class="card-body">
+          <span class="badge">عاصمة المنطقة</span>
+          <h3>سكاكا</h3>
+          <p>عاصمة الجوف، مدينة زراعية تشتهر بزيت الزيتون والآثار.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/sakaka-old.jpg" alt="سكاكا قديمًا">
+        <div class="card-body">
+          <h3>سكاكا تاريخيًا</h3>
+          <p>قلعة زعبل من أقدم القلاع في الجزيرة العربية، وقد بُنيت على رأس جبل صخري  بهدف المراقبة والحماية، وتتميز بتاريخ طويل يمتد لقرون مضت.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- القريات -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/qurayyat.jpg" alt="القريات">
+        <div class="card-body">
+          <span class="badge">حدودية</span>
+          <h3>القريات</h3>
+          <p>محافظة حدودية شمالية تشتهر بالزراعة والموقع التجاري.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/qurayyat-old.jpg" alt="القريات قديمًا">
+        <div class="card-body">
+          <h3>القريات تاريخيًا</h3>
+          <p>قصر كاف حصن أثري قرب قرية كاف في القريات بمنطقة الجوف، بُني للحماية والإدارة ويُعد من أبرز معالم المنطقة التاريخية.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- دومة الجندل -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/dumat-aljandal.jpg" alt="دومة الجندل">
+        <div class="card-body">
+          <span class="badge">تراثية</span>
+          <h3>دومة الجندل</h3>
+          <p>مدينة تاريخية تشتهر بالقلعة والآثار والواحات.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/dumat-aljandal-old.jpg" alt="دومة الجندل قديمًا">
+        <div class="card-body">
+          <h3>دومة الجندل تاريخيًا</h3>
+          <p>قلعة مارد في دومة جندل في 1922م .</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- طبرجل -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/tubarjal.jpg" alt="طبرجل">
+        <div class="card-body">
+          <span class="badge">زراعة</span>
+          <h3>طبرجل</h3>
+          <p>محافظة زراعية تشتهر بالمشاريع الزراعية الحديثة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/tubarjal-old.jpg" alt="طبرجل قديمًا">
+        <div class="card-body">
+          <h3>طبرجل تاريخيًا</h3>
+          <p>أول جامع تأسس بمحافظة طبرجل
+قام بتأسيسه الشيخ: عبدالله الدويرج عام ١٩٥٨م . </p>
+        </div>
+      </div>
+    </div></div>
+
+  </div>
+  <!-- =================== منطقة الحدود الشمالية =================== -->
+  <div class="section-title"><h2>📍 منطقة الحدود الشمالية</h2></div>
+  <div class="grid">
+
+    <!-- عرعر -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/ar_ar.jpg" alt="عرعر">
+        <div class="card-body">
+          <span class="badge">عاصمة المنطقة</span>
+          <h3>عرعر</h3>
+          <p>عاصمة الحدود الشمالية، مركز إداري وخدمي يربط الشمال بالمناطق المجاورة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/ar_ar-old.jpg" alt="عرعر قديمًا">
+        <div class="card-body">
+          <h3>عرعر تاريخيًا</h3>
+          <p>أطفال من البادية قرب عرعر1954م عام.  </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- رفحاء -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/rafha.jpg" alt="رفحاء">
+        <div class="card-body">
+          <span class="badge">طرق</span>
+          <h3>رفحاء</h3>
+          <p>محافظة على الطرق الشمالية تشتهر بالخدمات والنشاط التجاري.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/rafha-old.jpg" alt="رفحاء قديمًا">
+        <div class="card-body">
+          <h3>رفحاء تاريخيًا</h3>
+          <p>سوق رفحاء 1970م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- طريف -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/turaif.jpg" alt="طريف">
+        <div class="card-body">
+          <span class="badge">شمال</span>
+          <h3>طريف</h3>
+          <p>محافظة شمالية تشتهر بالموقع الحدودي والطقس البارد شتاءً.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/turaif-old.jpg" alt="طريف قديمًا">
+        <div class="card-body">
+          <h3>طريف تاريخيًا</h3>
+          <p>الانتهاء من مشروع بناء خط التابلاين 
+‏بالقرب من طريف عام 1951م</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- العويقيلة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/uwaigilah.jpg" alt="العويقيلة">
+        <div class="card-body">
+          <span class="badge">محافظة</span>
+          <h3>العويقيلة</h3>
+          <p>محافظة تخدم القرى والطرق شمال شرق المنطقة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/uwaigilah-old.jpg" alt="العويقيلة قديمًا">
+        <div class="card-body">
+          <h3>العويقيلة تاريخيًا</h3>
+          <p>قرية الدويد قرية قديمة في العويقيله نشأت حول الآبار فكانت محطة للبادية والقوافل.</p>
+        </div>
+      </div>
+    </div></div>
+
+  </div>
+
+</div> <!-- نهاية container -->
+ <div class="back-wrap">
+    <a href="regions.html" class="back-btn"> الرجوع إلى صفحة المناطق</a>
+  </div>
+
+<footer> مشروع يوم التأسيس – المنطقة الشمالية</footer>
+
+<script>
+document.querySelectorAll('.flip-card').forEach(card=>{
+  card.addEventListener('click',()=>{
+    card.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>

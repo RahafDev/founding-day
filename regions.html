@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مناطق المملكة</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<style>
+    :root{
+      --brown:#6b4a2b;
+      --brown-2:#8b6a45;
+      --beige:#f3e8d6;
+      --bg:#f6f2ea;
+      --text:#3a2a1a;
+      --card:#ffffff;
+    }
+
+    *{
+      box-sizing:border-box;
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+    }
+
+    /* ===== Navbar ===== */
+    .navbar{
+      background:linear-gradient(135deg, var(--brown), var(--brown-2));
+      color:var(--beige);
+      padding:14px 24px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .navbar .logo{
+      font-weight:700;
+      font-size:20px;
+    }
+
+    .navbar nav a{
+      color:var(--beige);
+      text-decoration:none;
+      margin:0 10px;
+      font-weight:500;
+    }
+
+    .navbar nav a:hover{
+      text-decoration:underline;
+    }
+
+    /* ===== Hero ===== */
+    .hero{
+      min-height:40vh;
+      background:
+        linear-gradient(rgba(107,74,43,.6), rgba(107,74,43,.6)),
+        url("images/hero-bg.jpg");
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      text-align:center;
+      color:var(--beige);
+    }
+
+    .hero-box{
+      background:rgba(255,255,255,.18);
+      backdrop-filter: blur(6px);
+      border-radius:24px;
+      padding:40px 50px;
+      max-width:800px;
+      box-shadow:0 20px 40px rgba(0,0,0,.25);
+    }
+
+    .hero-box h1{
+      margin:0 0 10px;
+      font-size:36px;
+    }
+
+    .hero-box p{
+      margin:0;
+      color:#f1e7d8;
+      font-size:18px;
+    }
+
+    /* ===== Container ===== */
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .section-title h2{
+      margin:0 0 10px;
+      font-size:28px;
+      color:var(--brown);
+    }
+
+    .section-title p{
+      margin:0;
+      color:#6b5a47;
+    }
+
+    /* ===== Grid Cards ===== */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fill,minmax(210px, 1fr));
+      gap:24px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,.12);
+      transition:.25s ease;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+      box-shadow:0 18px 35px rgba(0,0,0,.18);
+    }
+
+    .card img{
+      width:100%;
+      height:170px;
+      object-fit:cover;
+    }
+
+    .card-body{
+      padding:16px 18px 20px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      height:100%;
+      text-align:center;
+    }
+
+    .card-body h3{
+      margin:0 0 10px;
+      color:var(--brown);
+    }
+
+    .card-body p{
+      margin:0 0 16px;
+      color:#5a4a3a;
+      font-size:14px;
+    }
+
+    .btn{
+      align-self:center;
+      background:linear-gradient(135deg, var(--brown), var(--brown-2));
+      color:var(--beige);
+      padding:10px 18px;
+      border-radius:10px;
+      text-decoration:none;
+      font-size:14px;
+      transition:.25s ease;
+      box-shadow:0 6px 15px rgba(0,0,0,.2);
+    }
+
+    .btn:hover{
+      transform: translateY(-2px);
+      box-shadow:0 10px 20px rgba(0,0,0,.25);
+    }
+
+    /* ===== Back Button ===== */
+    .back-home{
+      display:flex;
+      justify-content:center;
+      margin:40px 0 10px;
+    }
+
+    .back-btn{
+      background:linear-gradient(135deg, var(--brown-2), var(--brown));
+      color:var(--beige);
+      padding:12px 28px;
+      border-radius:14px;
+      text-decoration:none;
+      font-size:16px;
+      box-shadow:0 6px 15px rgba(0,0,0,.2);
+      transition:.25s ease;
+    }
+
+    .back-btn:hover{
+      transform: translateY(-2px);
+      box-shadow:0 10px 20px rgba(0,0,0,.25);
+    }/* ===== Footer ===== */
+    footer{
+      text-align:center;
+      padding:20px;
+      color:#6b5a47;
+      font-size:14px;
+    }
+
+
+.navbar nav a:hover{
+  color: #ffd27a; /* ذهبي خفيف عند المرور */
+}
+
+  </style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="history.html">التاريخ</a>
+      <a href="kings.html">الحكام</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-box">
+      <h1>مناطق المملكة العربية السعودية</h1>
+      <p>تعرّف على المناطق الرئيسية وما يميّز كل منطقة</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div class="container">
+
+    <div class="section-title">
+      <h2>المناطق</h2>
+      <p>استكشف مناطق المملكة وتاريخها وطبيعتها</p>
+    </div>
+
+    <div class="grid">
+
+      <!-- المنطقة الوسطى -->
+      <div class="card">
+        <img src="images/central.jpg" alt="المنطقة الوسطى">
+        <div class="card-body">
+          <div>
+            <h3>المنطقة الوسطى</h3>
+            <p>تضم الرياض والقصيم، وتمثل قلب المملكة السياسي والتاريخي.</p>
+          </div>
+          <a class="btn" href="central.html">الدخول إلى المنطقة</a>
+        </div>
+      </div>
+
+      <!-- المنطقة الشرقية -->
+      <div class="card">
+        <img src="images/east.jpg" alt="المنطقة الشرقية">
+        <div class="card-body">
+          <div>
+            <h3>المنطقة الشرقية</h3>
+            <p>تضم الدمام والأحساء والجبيل، وتتميز بالساحل والاقتصاد والطاقة.</p>
+          </div>
+          <a class="btn" href="eastern.html">الدخول إلى المنطقة</a>
+        </div>
+      </div>
+
+      <!-- المنطقة الغربية -->
+      <div class="card">
+        <img src="images/west.jpg" alt="المنطقة الغربية">
+        <div class="card-body">
+          <div>
+            <h3>المنطقة الغربية</h3>
+            <p>تضم مكة المكرمة والمدينة المنورة، وتتميز بالمكانة الدينية والتاريخية.</p>
+          </div>
+          <a class="btn" href="western.html">الدخول إلى المنطقة</a>
+        </div>
+      </div>
+
+      <!-- المنطقة الشمالية -->
+      <div class="card">
+        <img src="images/north.jpg" alt="المنطقة الشمالية">
+        <div class="card-body">
+          <div>
+            <h3>المنطقة الشمالية</h3>
+            <p>تضم تبوك والجوف والحدود الشمالية، وتتميز بالتاريخ والطبيعة الصحراوية.</p>
+          </div>
+          <a class="btn" href="north.html">الدخول إلى المنطقة</a>
+        </div>
+      </div>
+
+      <!-- المنطقة الجنوبية -->
+      <div class="card">
+        <img src="images/south.jpg" alt="المنطقة الجنوبية">
+        <div class="card-body">
+          <div>
+            <h3>المنطقة الجنوبية</h3>
+            <p>تضم عسير وجازان ونجران والباحة، وتشتهر بالطبيعة الجبلية والتراث.</p>
+          </div>
+          <a class="btn" href="southern.html">الدخول إلى المنطقة</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="back-home">
+      <a href="index.html" class="back-btn">الرجوع إلى الصفحة الرئيسية</a>
+    </div>
+
+  </div>
+
+  <footer>
+     مشروع يوم التأسيس – صفحة المناطق
+  </footer>
+
+</body>
+</html>

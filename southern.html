@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>المنطقة الجنوبية</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --primary:#2f5d50;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;font-family:"Segoe UI",Tahoma,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+header{
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;padding:40px 20px;text-align:center;
+}
+header h1{margin:0 0 10px;font-size:32px;}
+header p{margin:0;color:#e5f3ef}
+
+.container{max-width:1200px;margin:auto;padding:30px 20px 60px;}
+
+.back-wrap{margin-bottom:25px;text-align:center;}
+.back-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:14px;
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
+  transition:.25s ease;
+}
+
+
+.back-btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.25);}
+
+.section-title{
+  display:flex;align-items:center;gap:12px;margin:20px 0 20px;
+  border-right:6px solid var(--primary);padding-right:12px;
+}
+.section-title h2{margin:0;font-size:26px;color:var(--primary);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:20px;
+}
+
+/* Flip Cards (مثل الشرقية) */
+.flip-card{perspective:1200px;transition:transform .3s ease;}
+.flip-card:hover{transform:translateY(-8px);}
+
+.flip-inner{
+  position:relative;
+  width:100%;
+  height:340px;
+  transition:transform .7s;
+  transform-style:preserve-3d;
+  cursor:pointer;
+}
+.flip-card.active .flip-inner{transform:rotateY(180deg);}
+
+.flip-front,.flip-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  border:1px solid var(--border);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.flip-front img,.flip-back img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  background:#ddd;
+}
+
+.card-body{padding:16px 18px 20px;}
+.card-body h3{margin:0 0 8px;font-size:18px;}
+
+.badge{
+  display:inline-block;
+  font-size:12px;
+  background:#eef6f3;
+  color:var(--primary);
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+
+.card-body p{margin:0;color:var(--muted);font-size:14px;}
+
+.flip-back{
+  transform:rotateY(180deg);
+  background:#fdfdfb;
+}
+.flip-back .card-body p{color:#374151;}
+
+footer{text-align:center;color:#6b7280;padding:20px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>المنطقة الجنوبية</h1>
+  <p>مدن ومحافظات مناطق: عسير، جازان، نجران، الباحة</p>
+</header>
+
+<div class="container">
+
+
+  <!--     (عسير، جازان، نجران، الباحة) -->
+  <!-- =================== عسير =================== -->
+  <div class="section-title"><h2>📍 منطقة عسير</h2></div>
+  <div class="grid">
+
+    <!-- أبها -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/abha.jpg" alt="أبها">
+        <div class="card-body">
+          <span class="badge">عاصمة</span>
+          <h3>أبها</h3>
+          <p>عاصمة المنطقة، مدينة جبلية معتدلة المناخ ووجهة سياحية مهمة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/abha-old.jpg" alt="أبها قديمًا">
+        <div class="card-body">
+          <h3>أبها تاريخيًا</h3>
+          <p>     ألتقطت في عام ١٩٤٥م. </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- خميس مشيط -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/khamis.jpg" alt="خميس مشيط">
+        <div class="card-body">
+          <span class="badge">حضرية</span>
+          <h3>خميس مشيط</h3>
+          <p>مدينة كبيرة ذات نشاط تجاري وخدمي واسع.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/khamis-old.jpg" alt="خميس مشيط قديمًا">
+        <div class="card-body">
+          <h3>خميس مشيط تاريخيًا</h3>
+          <p>  كانت القلعة مقر إقامة الأمير سعيد بن مشيط، أمير قبائل الشهران، وأبنائه التقطت عام  1947م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- بيشة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/bisha.jpg" alt="بيشة">
+        <div class="card-body">
+          <span class="badge">زراعية</span>
+          <h3>بيشة</h3>
+          <p>محافظة تشتهر بالزراعة وتُعد بوابة شمال عسير.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/bisha-old.jpg" alt="بيشة قديمًا">
+        <div class="card-body">
+          <h3>بيشة تاريخيًا</h3>
+          <p>كانت واحة على طرق القوافل ومركز استقرار زراعي.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- النماص -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/al-namas.jpg" alt="النماص">
+        <div class="card-body">
+          <span class="badge">جبلية</span>
+          <h3>النماص</h3>
+          <p>مدينة جبلية معروفة بالطبيعة الخضراء والجو المعتدل.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/al-namas-old.jpg" alt="النماص قديمًا">
+        <div class="card-body">
+          <h3>النماص تاريخيًا</h3>
+          <p>صورة جماعية لرجال يقفون في صف واحد خلال احتفال في النماص التقطت الصوره 1946م. </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- محايل عسير -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/muhayil.jpg" alt="محايل عسير">
+        <div class="card-body">
+          <span class="badge">زراعية</span>
+          <h3>محايل عسير</h3>
+          <p>محافظة تجمع بين النشاط الزراعي والتجاري.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/muhayil-old.jpg" alt="محايل قديمًا">
+        <div class="card-body">
+          <h3>محايل تاريخيًا</h3>
+          <p>     
+       . تُظهر الصورة المشهد العمراني القديم والحياة اليومية في المنطقة في ذلك الوقت  1967 م تقريبا .</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- ظهران الجنوب -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/dahran.jpg" alt="ظهران الجنوب">
+        <div class="card-body">
+          <span class="badge">حدودية</span>
+          <h3>ظهران الجنوب</h3>
+          <p>محافظة حدودية ذات موقع استراتيجي.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/dahran-old.jpg" alt="ظهران الجنوب قديمًا">
+        <div class="card-body">
+          <h3>ظهران الجنوب تاريخيًا</h3>
+          <p>كانت نقطة مراقبة واستقرار في جنوب عسير وألتقطت الصورة في عام 1946م.</p>
+        </div>
+      </div>
+    </div></div>
+
+ 
+
+    <!-- سراة عبيدة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/sarat.jpg" alt="سراة عبيدة">
+        <div class="card-body">
+          <span class="badge">جبلية</span>
+          <h3>سراة عبيدة</h3>
+          <p>محافظة جبلية معروفة بطبيعتها وتراثها.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/sarat-old.jpg" alt="سراة عبيدة قديمًا">
+        <div class="card-body">
+          <h3>سراة عبيدة تاريخيًا</h3>
+          <p>من مناطق السراة ذات القرى الزراعية القديمة.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- رجال ألمع -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/rijal-alma.jpg" alt="رجال ألمع">
+        <div class="card-body">
+          <span class="badge">تراثية</span>
+          <h3>رجال ألمع</h3>
+          <p>منطقة تراثية مشهورة بالقرى الحجرية التاريخية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/rijal-alma-old.jpg" alt="رجال ألمع قديمًا">
+        <div class="card-body">
+          <h3>رجال ألمع تاريخيًا</h3>
+          <p>كانت محطة تجارة وقوافل بين تهامة والسراة.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- بلقرن -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/balqarn.jpg" alt="بلقرن">
+        <div class="card-body">
+          <span class="badge">محافظة</span>
+          <h3>بلقرن</h3>
+          <p>محافظة جبلية ذات طبيعة جميلة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/balqarn-old.jpg" alt="بلقرن قديمًا">
+        <div class="card-body">
+          <h3>بلقرن تاريخيًا</h3>
+          <p>من مناطق الاستقرار الجبلي والزراعة ,ألتقطت الصورة في 1946م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- أحد رفيدة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/ahad-rufaidah.jpg" alt="أحد رفيدة">
+        <div class="card-body">
+          <span class="badge">محافظة</span>
+          <h3>أحد رفيدة</h3>
+          <p>محافظة قريبة من أبها وتتميز بالنشاط الزراعي.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/ahad-rufaidah-old.jpg" alt="أحد رفيدة قديمًا">
+        <div class="card-body">
+          <h3>أحد رفيدة تاريخيًا</h3>
+          <p>     سوق أحد رفيده قديما.</p>
+        </div>
+      </div>
+    </div></div>
+
+  
+
+    <!-- البرك -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/albirkk.jpg" alt="البرك">
+        <div class="card-body">
+          <span class="badge">ساحلية</span>
+          <h3>البرك</h3>
+          <p>محافظة ساحلية تطل على البحر الأحمر.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/albirk-old.jpg" alt="البرك قديمًا">
+        <div class="card-body">
+          <h3>البرك تاريخيًا</h3>
+          <p>كانت ميناءً صغيرًا للصيد والتجارة الساحلية.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- بارق -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/bariq.jpg" alt="بارق">
+        <div class="card-body">
+          <span class="badge">محافظة</span>
+          <h3>بارق</h3>
+          <p>محافظة ذات طبيعة متنوعة بين الجبال والسهول.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/bariq-old.jpg" alt="بارق قديمًا">
+        <div class="card-body">
+          <h3>بارق تاريخيًا</h3>
+          <p>كانت منطقة عبور بين تهامة والسراة,ألتقطت في عام 1945م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- تنومة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/tanumah.jpg" alt="تنومة">
+        <div class="card-body">
+          <span class="badge">جبلية</span>
+          <h3>تنومة</h3>
+          <p>مدينة جبلية مشهورة بالغابات والأجواء المعتدلة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/tanumah-old.jpg" alt="تنومة قديمًا">
+        <div class="card-body">
+          <h3>تنومة تاريخيًا</h3>
+          <p>من مناطق الاستقرار الجبلي والزراعة المطرية.</p>
+        </div>
+      </div>
+    </div></div>
+
+
+   
+
+  </div>
+
+  <!-- =================== جازان =================== -->
+  <div class="section-title"><h2>📍 منطقة جازان</h2></div>
+  <div class="grid">
+
+    <!-- جازان -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/jazan.jpg" alt="جيزان">
+        <div class="card-body">
+          <span class="badge">ساحلية</span>
+          <h3>جيزان</h3>
+          <p>مدينة ساحلية تشتهر بالزراعة والميناء والطبيعة المتنوعة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/jazan-old.jpg" alt="جيزان قديمًا">
+        <div class="card-body">
+          <h3>جيزان تاريخيًا</h3>
+          <p>كانت مركزًا للتجارة والزراعة على ساحل البحر الأحمر.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- أبو عريش -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/abu-arish.jpg" alt="أبو عريش">
+        <div class="card-body">
+          <span class="badge">زراعة</span>
+          <h3>أبو عريش</h3>
+          <p>من أكبر محافظات جازان وتشتهر بالزراعة والخدمات.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/abu-arish-old.jpg" alt="أبو عريش قديمًا">
+        <div class="card-body">
+          <h3>أبو عريش تاريخيًا</h3>
+          <p>من مناطق الاستقرار الزراعي القديمة في تهامة جازان ,التقطت الصورة في عام 1947م.    </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- صامطة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/samtah.jpg" alt="صامطة">
+        <div class="card-body">
+          <span class="badge">زراعة</span>
+          <h3>صامطة</h3>
+          <p>محافظة جنوبية تشتهر بالزراعة والخدمات.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/samtah-old.jpg" alt="صامطة قديمًا">
+        <div class="card-body">
+          <h3>صامطة تاريخيًا</h3>
+          <p>   يعود بناء الحصن إلى عام 1242 هـ (قرابة 1827م)، بناه الشريف محمد بن أبو طالب خيرات، وكان مقراً للحكم والإدارة في تلك الفترة.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- صبيا -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/sabya.jpg" alt="صبيا">
+        <div class="card-body">
+          <span class="badge">زراعة</span>
+          <h3>صبيا</h3>
+          <p>محافظة تشتهر بالزراعة والأسواق المحلية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/sabya-old.jpg" alt="صبيا قديمًا">
+        <div class="card-body">
+          <h3>صبيا تاريخيًا</h3>
+          <p>منظر لمدينة صبيا القديمة
+التقطت في عام 1946م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- بيش -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/bish.jpg" alt="بيش">
+        <div class="card-body">
+          <span class="badge">زراعة</span>
+          <h3>بيش</h3>
+          <p>محافظة زراعية تشتهر بوادي بيش والمنتجات الزراعية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/bish-old.jpg" alt="بيش قديمًا">
+        <div class="card-body">
+          <h3>بيش تاريخيًا</h3>
+          <p>     وادي بيش يفيض في سفوح التلال بالقرب من جبل الريث ,التقطت في عام 1946.  </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الدرب -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/aldarb.jpg" alt="الدرب">
+        <div class="card-body">
+          <span class="badge">ساحل</span>
+          <h3>الدرب</h3>
+          <p>محافظة ساحلية على البحر الأحمر وتشتهر بالصيد.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/aldarb-old.jpg" alt="الدرب قديمًا">
+        <div class="card-body">
+          <h3>الدرب تاريخيًا</h3>
+          <p>كانت محطة على طرق الساحل وموردًا بحريًا مهمًا ,التقطت في 1945م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- ضمد -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/damad.jpg" alt="ضمد">
+        <div class="card-body">
+          <span class="badge">تراث</span>
+          <h3>ضمد</h3>
+          <p>مدينة معروفة بالعلم والتراث والزراعة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/damad-old.jpg" alt="ضمد قديمًا">
+        <div class="card-body">
+          <h3>ضمد تاريخيًا</h3>
+          <p>منظر لأكواخ مستديرة ومبنى حجري مربع في وادي ضمد السفلي التقطت في عام 1947م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الحرث -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/al-harth.jpg" alt="الحرث">
+        <div class="card-body">
+          <span class="badge">حدودية</span>
+          <h3>الحرث</h3>
+          <p>محافظة جبلية حدودية تشتهر بالطبيعة والزراعة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/al-harth-old.jpg" alt="الحرث قديمًا">
+        <div class="card-body">
+          <h3>الحرث تاريخيًا</h3>
+          <p>كانت من مناطق الاستقرار الجبلي في جنوب جازان.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الريث -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/al-rayth.jpg" alt="الريث">
+        <div class="card-body">
+          <span class="badge">جبال</span>
+          <h3>الريث</h3>
+          <p>محافظة جبلية تشتهر بالطبيعة الخضراء والزراعة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/al-rayth-old.jpg" alt="الريث قديمًا">
+        <div class="card-body">
+          <h3>الريث تاريخيًا</h3>
+          <p>من مناطق الاستقرار الجبلي والزراعة المطرية قديمًا.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- فرسان -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/farasan.jpg" alt="فرسان">
+        <div class="card-body">
+          <span class="badge">جزر</span>
+          <h3>فرسان</h3>
+          <p>أرخبيل في البحر الأحمر يشتهر بالشعاب المرجانية والسياحة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/farasan-old.jpg" alt="فرسان قديمًا">
+        <div class="card-body">
+          <h3>فرسان تاريخيًا</h3>
+          <p>  هو "بيت الجرمل" الأثري الواقع على ساحل جزيرة قماح التابعة لجزر  فرسان. </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الدائر -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/aldayer.jpg" alt="الدائر">
+        <div class="card-body">
+          <span class="badge">جبال</span>
+          <h3>الدائر</h3>
+          <p>محافظة جبلية تشتهر بالمدرجات الزراعية والبن.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/aldayer-old.jpg" alt="الدائر قديمًا">
+        <div class="card-body">
+          <h3>الدائر تاريخيًا</h3>
+          <p>   قرية العنقة الأثرية،وتظهر فيها الحصون الحجرية القديمة.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- العارضة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/alaridah.jpg" alt="العارضة">
+        <div class="card-body">
+          <span class="badge">جبال</span>
+          <h3>العارضة</h3>
+          <p>محافظة جبلية تشتهر بالمدرجات والطبيعة الخضراء.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/alaridah-old.jpg" alt="العارضة قديمًا">
+        <div class="card-body">
+          <h3>العارضة تاريخيًا</h3>
+          <p>كانت من مناطق الزراعة الجبلية والاستقرار القديم.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- أحد المسارحة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/ahad-almasarha.jpg" alt="أحد المسارحة">
+        <div class="card-body">
+          <span class="badge">تراث</span>
+          <h3>أحد المسارحة</h3>
+          <p>محافظة زراعية تشتهر بالمحاصيل والأسواق المحلية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/ahad-almasarha-old.jpg" alt="أحد المسارحة قديمًا">
+        <div class="card-body">
+          <h3>أحد المسارحة تاريخيًا</h3>
+          <p> رجال قبيلة المسارحة في تهامة بالقرب من جازان بواسطة المصور ماكفرات فورين في عام ١٩٢٣م (١٣٤١هـ).</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- العيدابي -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/al-aidabi.jpg" alt="العيدابي">
+        <div class="card-body">
+          <span class="badge">جبل صماد</span>
+          <h3>العيدابي</h3>
+          <p>        محافظة جبلية تشتهر بالطبيعة والمدرجات الزراعية (بالغازي) .          </p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/al-aidabi-old.jpg" alt="العيدابي قديمًا">
+        <div class="card-body">
+          <h3>العيدابي تاريخيًا</h3>
+          <p>  رجال في وادي جوراء التابع لمنطقة العيدابي.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- فيفاء -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/fayfa.jpg" alt="فيفاء">
+        <div class="card-body">
+          <span class="badge">جبال</span>
+          <h3>فيفاء</h3>
+          <p>منطقة جبلية مشهورة بالمدرجات الزراعية والبن.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/fayfa-old.jpg" alt="فيفاء قديمًا">
+        <div class="card-body">
+          <h3>فيفاء تاريخيًا</h3>
+          <p>كانت من أشهر مناطق الزراعة الجبلية في جنوب الجزيرة.</p>
+        </div>
+      </div>
+    </div></div>
+
+
+    <!-- هروب -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/harub.jpg" alt="هروب">
+        <div class="card-body">
+          <span class="badge">جبال</span>
+          <h3>هروب</h3>
+          <p>محافظة جبلية تشتهر بالطبيعة والزراعة الجبلية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/harub-old.jpg" alt="هروب قديمًا">
+        <div class="card-body">
+          <h3>هروب تاريخيًا</h3>
+          <p>من مناطق الاستقرار الجبلي والزراعة التقليدية قديمًا,التقطت في عام 1946م.</p>
+        </div>
+      </div>
+    </div></div>
+
+  </div>
+
+  <!-- =================== نجران =================== -->
+  <div class="section-title"><h2>📍 منطقة نجران</h2></div>
+  <div class="grid">
+
+    <!-- نجران -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/najran.jpg" alt="نجران">
+        <div class="card-body">
+          <span class="badge">عاصمة</span>
+          <h3>نجران</h3>
+          <p>عاصمة المنطقة، واحة زراعية ذات تاريخ عريق.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/najran-old.jpg" alt="نجران قديمًا">
+        <div class="card-body">
+          <h3>نجران تاريخيًا</h3>
+          <p> صورة لرجل من بدو اليام التقطت عام 1947م .</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- شرورة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/sharurah.jpg" alt="شرورة">
+        <div class="card-body">
+          <span class="badge">حدودية</span>
+          <h3>شرورة</h3>
+          <p>محافظة حدودية ذات موقع مهم جنوب شرق المنطقة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/sharurah-old.jpg" alt="شرورة قديمًا">
+        <div class="card-body">
+          <h3>شرورة تاريخيًا</h3>
+          <p>كانت منطقة عبور واستقرار للبادية في أطراف الربع الخالي.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- حبونا -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/habouna.jpg" alt="حبونا">
+        <div class="card-body">
+          <span class="badge">زراعة</span>
+          <h3>حبونا</h3>
+          <p>محافظة تشتهر بالزراعة والأودية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/habouna-old.jpg" alt="حبونا قديمًا">
+        <div class="card-body">
+          <h3>حبونا تاريخيًا</h3>
+          <p>كانت من مناطق الاستقرار الزراعي في جنوب نجران.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- بدر الجنوب -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/badr-janub.jpg" alt="بدر الجنوب">
+        <div class="card-body">
+          <span class="badge">جبلية</span>
+          <h3>بدر الجنوب</h3>
+          <p>محافظة جبلية ذات طبيعة وتراث محلي.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/badr-janub-old.jpg" alt="بدر الجنوب قديمًا">
+        <div class="card-body">
+          <h3>بدر الجنوب تاريخيًا</h3>
+          <p>منظر لأبراج مراقبة دائرية شاهقة في مدينة بدر1947م.</p>
+        </div>
+      </div>
+    </div></div>
+
+ 
+
+
+
+  
+
+  </div>
+
+  <!-- =================== الباحة =================== -->
+  <div class="section-title"><h2>📍 منطقة الباحة</h2></div>
+  <div class="grid">
+
+    <!-- الباحة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/al-baha.jpg" alt="الباحة">
+        <div class="card-body">
+          <span class="badge">عاصمة</span>
+          <h3>الباحة</h3>
+          <p>مدينة جبلية تشتهر بالغابات والأجواء المعتدلة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/al-baha-old.jpg" alt="الباحة قديمًا">
+        <div class="card-body">
+          <h3>الباحة تاريخيًا</h3>
+          <p> رجال من زهران,ألتقطت في عام 1946م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- بلجرشي -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/baljurashi.jpg" alt="بلجرشي">
+        <div class="card-body">
+          <span class="badge">جبلية</span>
+          <h3>بلجرشي</h3>
+          <p>محافظة جبلية تشتهر بالطبيعة والأسواق الشعبية.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/baljurashi-old.jpg" alt="بلجرشي قديمًا">
+        <div class="card-body">
+          <h3>بلجرشي تاريخيًا</h3>
+          <p>كانت مركزًا لقرى السراة والأسواق المحلية.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- المندق -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/al-mandaq.jpg" alt="المندق">
+        <div class="card-body">
+          <span class="badge">تراثية</span>
+          <h3>المندق</h3>
+          <p>محافظة ذات قرى تراثية وأجواء جبلية جميلة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/al-mandaq-old.jpg" alt="المندق قديمًا">
+        <div class="card-body">
+          <h3>المندق تاريخيًا</h3>
+          <p>ألتقطت الصورة عام 1940م تقريبا. </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- المخواة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/almukhwah.jpg" alt="المخواة">
+        <div class="card-body">
+          <span class="badge">تهامية</span>
+          <h3>المخواة</h3>
+          <p>محافظة تهامية تتميز بالمناخ الدافئ والزراعة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/almukhwah-old.jpg" alt="المخواة قديمًا">
+        <div class="card-body">
+          <h3>المخواة تاريخيًا</h3>
+          <p>كانت مركزًا لقرى تهامة وخدمة النشاط الزراعي,ألتقطت في عام 1946م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    
+
+    
+
+  
+
+   
+
+   
+
+  </div>
+
+</div> <!-- نهاية container -->
+
+  <div class="back-wrap">
+    <a href="regions.html" class="back-btn"> الرجوع إلى صفحة المناطق</a>
+  </div>
+<footer> مشروع يوم التأسيس – المنطقة الجنوبية</footer>
+
+  
+<script>
+document.querySelectorAll('.flip-card').forEach(card=>{
+  card.addEventListener('click',()=>{
+    card.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>
+
+  

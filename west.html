@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>المنطقة الغربية </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style>
+    :root{
+      --bg:#f6f4ef; --card:#ffffff; --primary:#2f5d50; --text:#1f2937; --muted:#6b7280;
+      --border:#e5e7eb; --shadow:0 10px 25px rgba(0,0,0,.08); --radius:18px;
+    }
+    *{box-sizing:border-box;font-family:"Segoe UI", Tahoma, Arial, sans-serif;}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+    header{
+      background:linear-gradient(135deg,#2f5d50,#3f7c6a);
+      color:#fff;padding:40px 20px;text-align:center;
+    }
+    header h1{margin:0 0 8px;font-size:32px;}
+    header p{margin:0;color:#e5f3ef;font-size:16px;}
+
+    .container{max-width:1200px;margin:auto;padding:30px 20px 60px;}
+    .section{margin-bottom:50px;}
+    .section-title{
+      display:flex;align-items:center;gap:12px;margin:30px 0 12px;
+      border-right:6px solid var(--primary);padding-right:12px;
+    }
+    .section-title h2{margin:0;font-size:26px;color:var(--primary);}
+
+    .grid{
+      display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+      gap:18px;margin-top:15px;
+    }
+
+    .card{
+      background:var(--card);border-radius:var(--radius);border:1px solid var(--border);
+      box-shadow:var(--shadow);overflow:hidden;transition:.25s ease;display:flex;flex-direction:column;
+    }
+    .card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,.12);}
+    .card img{width:100%;height:160px;object-fit:cover;background:#ccc;}
+    .card-body{padding:14px 16px;}
+    .badge{
+      display:inline-block;background:#eef8f6;color:var(--primary);
+      padding:4px 10px;border-radius:999px;font-size:12px;margin-bottom:8px;
+    }
+    .card h3{margin:0 0 6px;font-size:18px;}
+    .card p{margin:0;color:var(--muted);font-size:14px;}
+
+    .back-container{display:flex;justify-content:center;margin:40px 0 20px;}
+    .back-btn{
+      background:linear-gradient(135deg,#1f4037,#2f5d50);color:#fff;
+      padding:12px 28px;border-radius:10px;text-decoration:none;font-size:16px;
+      box-shadow:0 6px 15px rgba(0,0,0,.15);transition:.25s ease;
+    }
+    .back-btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.2);}
+
+    footer{text-align:center;color:#6b7280;padding:18px;font-size:13px;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>المنطقة الغربية</h1>
+  <p>مدن ومحافظات غرب المملكة العربية السعودية وما تشتهر به</p>         
+</header>
+
+<div class="container">
+
+  <!-- =================== 1) منطقة مكة المكرمة =================== -->
+  <section class="section">
+    <div class="section-title"><h2>📍 منطقة مكة المكرمة</h2></div>
+    <div class="grid">
+      <div class="card"><img src="images/makkah.jpg"><div class="card-body"><span class="badge">دينية</span><h3>مكة المكرمة</h3><p>أقدس مدن المسلمين وتضم المسجد الحرام والكعبة المشرفة، ومقصد الحج والعمرة.</p></div></div>
+      <div class="card"><img src="images/jeddah.jpg"><div class="card-body"><span class="badge">ساحلية</span><h3>جدة</h3><p>عروس البحر الأحمر، مركز تجاري وسياحي وميناء رئيسي للمنطقة.</p></div></div>
+      <div class="card"><img src="images/taif.jpg"><div class="card-body"><span class="badge">مصيف</span><h3>الطائف</h3><p>مدينة جبلية معتدلة المناخ، تشتهر بزراعة الورود والفواكه.</p></div></div>
+      <div class="card"><img src="images/qnf.jpg"><div class="card-body"><span class="badge">ساحلية</span><h3>القنفذة</h3><p>مدينة ساحلية جنوب مكة ذات تاريخ تجاري وبحري قديم.</p></div></div>
+      <div class="card"><img src="images/al-lith.jpg"><div class="card-body"><span class="badge">ساحلية</span><h3>الليث</h3><p>محافظة ساحلية تشتهر بالصيد والأنشطة البحرية والزراعة.</p></div></div>
+      <div class="card"><img src="images/rabigh.jpg"><div class="card-body"><span class="badge">صناعية</span><h3>رابغ</h3><p>مدينة ساحلية ذات نشاط صناعي وموقع استراتيجي.</p></div></div>
+      <div class="card"><img src="images/khulais.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>خليص</h3><p>محافظة تقع شمال مكة وتشتهر بالزراعة والمواقع التاريخية.</p></div></div>
+      <div class="card"><img src="images/alkhurmah.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>الخرمة</h3><p>محافظة شرق الطائف تتميز بموقعها الزراعي وطرقها البرية.</p></div></div>
+      <div class="card"><img src="images/ranyah.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>رنية</h3><p>محافظة شرق مكة تشتهر بالزراعة وتربية المواشي.</p></div></div>
+      <div class="card"><img src="images/turbah.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>تربة</h3><p>محافظة زراعية تقع شرق الطائف وتشتهر بإنتاج الحبوب.</p></div></div>
+      <div class="card"><img src="images/aljumum.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>الجموم</h3><p>محافظة قريبة من مكة وتعد امتدادًا عمرانيًا وزراعيًا للمنطقة.</p></div></div>
+      <div class="card"><img src="images/kamil.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>الكامل</h3><p>محافظة شرقي مكة يغلب عليها الطابع الريفي والزراعي.</p></div></div>
+      <div class="card"><img src="images/almawiah.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>المويه</h3><p>محافظة شمال شرق الطائف تتميز بموقعها على الطرق البرية.</p></div></div>
+      <div class="card"><img src="images/maysan.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>ميسان</h3><p>محافظة جبلية جنوب الطائف تشتهر بمناخها المعتدل وزراعتها.</p></div></div>
+      <div class="card"><img src="images/adham.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>أضم</h3><p>محافظة جنوب مكة تشتهر بالأودية والزراعة الموسمية.</p></div></div>
+      <div class="card"><img src="images/alaridhiyat.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>العرضيات</h3><p>محافظة جنوب القنفذة تتميز بالطابع الزراعي والريفي.</p></div></div>
+      <div class="card"><img src="images/bahrah.jpg"><div class="card-body"><span class="badge">مدينة</span><h3>بحرة</h3><p>مدينة قريبة من جدة تشهد توسعًا عمرانيًا وصناعيًا.</p></div></div>
+    </div>
+  </section>
+
+  <!-- =================== 2) منطقة المدينة المنورة =================== -->
+  <section class="section">
+    <div class="section-title"><h2>📍 منطقة المدينة المنورة</h2></div>
+    <div class="grid">
+      <div class="card"><img src="images/madinah.jpg"><div class="card-body"><span class="badge">دينية</span><h3>المدينة المنورة</h3><p>ثاني أقدس مدينة في الإسلام وتضم المسجد النبوي الشريف.</p></div></div>
+      <div class="card"><img src="images/badr.jpg"><div class="card-body"><span class="badge">تاريخية</span><h3>بدر</h3><p>مدينة تاريخية اشتهرت بموقع غزوة بدر الكبرى.</p></div></div>
+      <div class="card"><img src="images/al-mahd.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>المهد</h3><p>محافظة ذات تاريخ قديم في التعدين وتضم مواقع أثرية.</p></div></div>
+      <div class="card"><img src="images/hanakiyah.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>الحناكية</h3><p>محافظة تقع شرق المدينة المنورة وتتميز بالنشاط الزراعي.</p></div></div>
+      <div class="card"><img src="images/wadi-faraa.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>وادي الفرع</h3><p>محافظة تضم قرى ومزارع وتشتهر بالزراعة.</p></div></div>
+      <div class="card"><img src="images/khaybar.jpg"><div class="card-body"><span class="badge">تاريخية</span><h3>خيبر</h3><p>واحة تاريخية مشهورة بحصونها وأهميتها في التاريخ الإسلامي.</p></div></div>
+      <div class="card"><img src="images/alays.jpg"><div class="card-body"><span class="badge">محافظة</span><h3>العيص</h3><p>محافظة شمال غرب المدينة وقريبة من الساحل الغربي.</p></div></div>
+      <div class="card"><img src="images/alula.jpg"><div class="card-body"><span class="badge">تراث عالمي</span><h3>العلا</h3><p>منطقة أثرية عالمية تضم مدائن صالح ومواقع تاريخية فريدة.</p></div></div>
+      <!-- إضافة ينبع داخل قسم المدينة المنورة (تصحيح إداري) -->
+      <div class="card"><img src="images/yanbu.jpg"><div class="card-body"><span class="badge">ساحلية وصناعية</span><h3>ينبع</h3><p> مدينة ساحلية صناعية تضم ميناءًومناطق صناعية كبرى</p></div></div>
+    </div>
+  </section>
+
+
+
+  
+
+  <div class="back-container">
+    <a href="regions.html" class="back-btn"> الرجوع إلى صفحة المناطق</a>
+  </div>
+
+</div>
+
+<footer>
+  © مشروع يوم التأسيس – المنطقة الغربية
+</footer>
+
+</body>
+</html>
