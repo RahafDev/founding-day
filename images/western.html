@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>المنطقة الغربية</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --primary:#2f5d50;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;font-family:"Segoe UI",Tahoma,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+header{
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;
+  padding:40px 20px;
+  text-align:center;
+}
+header h1{margin:0 0 10px;font-size:32px;}
+header p{margin:0;color:#e5f3ef}
+
+.container{max-width:1200px;margin:auto;padding:30px 20px 60px;}
+
+.back-wrap{margin-bottom:25px;text-align:center;}
+.back-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:14px;
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
+  transition:.25s ease;
+}
+.back-btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.25);}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:20px 0 20px;
+  border-right:6px solid var(--primary);
+  padding-right:12px;
+}
+.section-title h2{margin:0;font-size:26px;color:var(--primary);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:20px;
+}
+
+/* Flip Cards */
+.flip-card{perspective:1200px;transition:transform .3s ease;}
+.flip-card:hover{transform:translateY(-8px);}
+
+.flip-inner{
+  position:relative;
+  width:100%;
+  height:340px;
+  transition:transform .7s;
+  transform-style:preserve-3d;
+  cursor:pointer;
+}
+.flip-card.active .flip-inner{transform:rotateY(180deg);}
+
+.flip-front,.flip-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility:hidden;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  border:1px solid var(--border);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.flip-front img,.flip-back img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  background:#ddd;
+}
+
+.card-body{padding:16px 18px 20px;}
+.card-body h3{margin:0 0 8px;font-size:18px;}
+
+.badge{
+  display:inline-block;
+  font-size:12px;
+  background:#eef6f3;
+  color:var(--primary);
+  padding:4px 10px;
+  border-radius:999px;
+  margin-bottom:10px;
+}
+
+.card-body p{margin:0;color:var(--muted);font-size:14px;}
+
+.flip-back{
+  transform:rotateY(180deg);
+  background:#fdfdfb;
+}
+.flip-back .card-body p{color:#374151;}
+
+footer{text-align:center;color:#6b7280;padding:20px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>المنطقة الغربية</h1>
+  <p>مدن ومحافظات مكة المكرمة والمدينة المنورة</p>
+</header>
+
+<div class="container">
+
+
+<!-- ================= منطقة مكة المكرمة ================= -->
+<div class="section-title"><h2>📍 منطقة مكة المكرمة</h2></div>
+<div class="grid">
+
+<!-- مكة المكرمة -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/makkah.jpg" alt="مكة المكرمة">
+    <div class="card-body">
+      <span class="badge">عاصمة مقدسة</span>
+      <h3>مكة المكرمة</h3>
+      <p>أقدس مدن المسلمين وتضم المسجد الحرام والكعبة المشرفة.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/makkah-old.jpg" alt="مكة قديمًا">
+    <div class="card-body">
+      <h3>مكة تاريخيًا</h3>
+      <p>كانت مركزًا دينيًا وتجاريًا مهمًا في الجزيرة العربية قبل قيام الدولة السعودية.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- جدة -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/jeddah.jpg" alt="جدة">
+    <div class="card-body">
+      <span class="badge">ساحلية</span>
+      <h3>جدة</h3>
+      <p>مدينة ساحلية كبرى وبوابة الحرمين على البحر الأحمر.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/jeddah-old.jpg" alt="جدة قديمًا">
+    <div class="card-body">
+      <h3>جدة تاريخيًا</h3>
+      <p>  (البلد) ألتقطت الصورة عام 1917م.  </p>
+    </div>
+  </div>
+</div></div>
+
+<!-- الطائف -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/taif.jpg" alt="الطائف">
+    <div class="card-body">
+      <span class="badge">مصيف</span>
+      <h3>الطائف</h3>
+      <p>مدينة جبلية معتدلة المناخ وتشتهر بالزراعة والورد.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/taif-old.jpg" alt="الطائف قديمًا">
+    <div class="card-body">
+        <span class="badge">قصر شبرا</span>
+
+      <h3>الطائف تاريخيًا</h3>
+      <p>    بنا في عام 1323هـ/1904م, يعد من المعالم التاريخية، ثم تحول إلى متحف ثقافي وطني في 1415هـ/1995م. </p>
+    </div>
+  </div>
+</div></div>
+
+<!-- القنفذة -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/qunfudhah.jpg" alt="القنفذة">
+    <div class="card-body">
+      <span class="badge">ساحلية</span>
+      <h3>القنفذة</h3>
+      <p>محافظة ساحلية على البحر الأحمر ذات نشاط تجاري وزراعي.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/qunfudhah-old.jpg" alt="القنفذة قديمًا">
+    <div class="card-body">
+      <h3>القنفذة تاريخيًا</h3>
+      <p> انضمت المحافظة رسمياً إلى إمارة منطقة مكة المكرمة في عام 1382هـ/1962م. </p>
+    </div>
+  </div>
+</div></div>
+
+<!-- الليث -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/lith.jpg" alt="الليث">
+    <div class="card-body">
+      <span class="badge">ساحلية</span>
+      <h3>الليث</h3>
+      <p>محافظة ساحلية تشتهر بالصيد والزراعة.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/lith-old.jpg" alt="الليث قديمًا">
+    <div class="card-body">
+      <h3>الليث تاريخيًا</h3>
+      <p>ذكر الرحالة كورنواليس عام 1916م,أن الأشراف ذوي حسن، يسكنون الليث،وشيخهم محمد حسن العود،وكانت لهم علاقات متوترة مع الأتراك، وروابط ود مع زهران والجحادلة.</p>
+    </div>
+  </div>
+</div></div>
+<!-- رابغ -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/rabigh.jpg" alt="رابغ">
+    <div class="card-body">
+      <span class="badge">ساحلية</span>
+      <h3>رابغ</h3>
+      <p>مدينة ساحلية تضم نشاطًا صناعيًا وميناءً مهمًا.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/rabigh-old.jpg" alt="رابغ قديمًا">
+    <div class="card-body">
+      <h3>رابغ تاريخيًا</h3>
+      <p> صورة لجيش رابغ في عام1945م تقريبا.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- خليص -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/khulais.jpg" alt="خليص">
+    <div class="card-body">
+      <span class="badge">زراعية</span>
+      <h3>خليص</h3>
+      <p>محافظة تشتهر بالزراعة والموقع بين مكة وجدة. </p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/khulais-old.jpg" alt="خليص قديمًا">
+    <div class="card-body">
+      <h3>خليص تاريخيًا</h3>
+      <p> مزارع "صادق دخيل" في منطقة خليص وتُعد هذه الصورة جزءاً من ذكريات المنطقة الزراعية القديمة.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- الخرمة -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/alkhurmah.jpg" alt="الخرمة">
+    <div class="card-body">
+      <span class="badge">نجد والحجاز</span>
+      <h3>الخرمة</h3>
+      <p>محافظة تقع على أطراف نجد والحجاز وتشتهر بالزراعة.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/alkhurmah-old.jpg" alt="الخرمة قديمًا">
+    <div class="card-body">
+      <h3>الخرمة تاريخيًا</h3>
+      <p>  صوره لرجال من قبيلة سبيع في محافظة الخرمة،التُقطت الصورة عام 1917م.  </p>
+    </div>
+  </div>
+</div></div>
+
+<!-- رنية -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/ranyah.jpg" alt="رنية">
+    <div class="card-body">
+      <span class="badge">أودية</span>
+      <h3>رنية</h3>
+      <p>محافظة تشتهر بالأودية والزراعة والرعي.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/ranyah-old.jpg" alt="رنية قديمًا">
+    <div class="card-body">
+      <h3>رنية تاريخيًا</h3>
+      <p>من مناطق الاستقرار القديمة على طرق القوافل.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- تربة -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/turbah.jpg" alt="تربة">
+    <div class="card-body">
+      <span class="badge">زراعة</span>
+      <h3>تربة</h3>
+      <p>محافظة زراعية تقع شرق الطائف.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/turbah-old.jpg" alt="تربة قديمًا">
+    <div class="card-body">
+      <h3>تربة تاريخيًا</h3>
+      <p>كانت من المناطق الزراعية المهمة في الحجاز.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- الجموم -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/aljumum.jpg" alt="الجموم">
+    <div class="card-body">
+      <span class="badge">قرب مكة</span>
+      <h3>الجموم</h3>
+      <p>محافظة قريبة من مكة وتخدم طرق الحجاج.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/aljumum-old.jpg" alt="الجموم قديمًا">
+    <div class="card-body">
+      <h3>الجموم تاريخيًا</h3>
+      <p>    هذه الصورة تظهر بقايا أثرية في محافظة الجموم بمنطقة مكة المكرمة، والتي تعود إلى تاريخ قديم جداً. </p>
+    </div>
+  </div>
+</div></div>
+
+
+
+
+<!-- ميسان -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/maysan.jpg" alt="ميسان">
+    <div class="card-body">
+      <span class="badge">جبلية</span>
+      <h3>ميسان</h3>
+      <p>محافظة جبلية جنوب الطائف ذات طبيعة جميلة.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/maysan-old.jpg" alt="ميسان قديمًا">
+    <div class="card-body">
+      <h3>ميسان تاريخيًا</h3>
+      <p>من مناطق السراة الجبلية ذات الاستقرار القديم.</p>
+    </div>
+  </div>
+</div></div>
+
+
+<!-- بحرة -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/bahrah.jpg" alt="بحرة">
+    <div class="card-body">
+      <span class="badge">قرب جدة</span>
+      <h3>بحرة</h3>
+      <p>مدينة قريبة من جدة وتشهد توسعًا عمرانيًا.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/bahrah-old.jpg" alt="بحرة قديمًا">
+    <div class="card-body">
+      <h3>بحرة تاريخيًا</h3>
+      <p>صوره للملك عبدالعزيز بن عبد الرحمن وابنه الملك فيصل في غرب وادي كتانه (شعيب الشيوخ) شمال بحرة. </p>
+    </div>
+    
+</div>
+  </div>
+</div></div>
+
+
+<!-- ================= منطقة المدينة المنورة ================= -->
+<div class="section-title"><h2>📍 منطقة المدينة المنورة</h2></div>
+<div class="grid">
+
+<!-- المدينة المنورة -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/madinah.jpg" alt="المدينة المنورة">
+    <div class="card-body">
+      <span class="badge">عاصمة المنطقة</span>
+      <h3>المدينة المنورة</h3>
+      <p>ثاني أقدس مدن الإسلام، مركز ديني وتاريخي مهم.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/madinah-old.jpg" alt="المدينة قديمًا">
+    <div class="card-body">
+      <h3>المدينة تاريخيًا</h3>
+      <p>كانت قاعدة للدولة الإسلامية الأولى ومركزًا دينيًا وسياسيًا,ُتظهر الصورة السور الخارجي للمدينة المنورة كما كان يبدو في حوالي عام 1890م.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- ينبع -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/yanbu.jpg" alt="ينبع">
+    <div class="card-body">
+      <span class="badge">ساحلية</span>
+      <h3>ينبع</h3>
+      <p>مدينة ساحلية صناعية وميناء مهم على البحر الأحمر.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/yanbu-old.jpg" alt="ينبع قديمًا">
+    <div class="card-body">
+      <h3>ينبع تاريخيًا</h3>
+      <p>كانت ميناءً قديمًا لتزويد المدينة المنورة بالمؤن,تصوير سافيناك ١٩١٧م.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- العلا -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/alula.jpg" alt="العلا">
+    <div class="card-body">
+      <span class="badge">تراث</span>
+      <h3>العلا</h3>
+      <p>تشتهر بمواقعها الأثرية وطبيعتها التاريخية الفريدة.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/alula-old.jpg" alt="العلا قديمًا">
+    <div class="card-body">
+      <h3>العلا تاريخيًا</h3>
+      <p>صورة للشيخ سليمان بن رفادة شيخ مشائخ قبائل بلي رحمه اللّٰه وغفر له، التقطها ليو فروبينيوس عام
+1915 م في العلا .</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- المهد -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/mahddhahab.jpg" alt="المهد">
+    <div class="card-body">
+      <span class="badge">تعدين</span>
+      <h3>المهد</h3>
+      <p>محافظة تشتهر بمناجم الذهب والنشاط التعديني.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/mahddhahab-old.jpg" alt="المهد قديمًا">
+    <div class="card-body">
+      <h3>المهد تاريخيًا</h3>
+      <p>عُرفت بمناجمها منذ عصور مبكرة في التاريخ الإسلامي.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- الحناكية -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/hinakiyah.jpg" alt="الحناكية">
+    <div class="card-body">
+      <span class="badge">نجد والحجاز</span>
+      <h3>الحناكية</h3>
+      <p>محافظة تربط بين نجد والمدينة المنورة.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/hinakiyah-old.jpg" alt="الحناكية قديمًا">
+    <div class="card-body">
+      <h3>الحناكية تاريخيًا</h3>
+      <p>كانت محطة عبور للقوافل بين وسط الجزيرة والحجاز.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- بدر -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/badr.jpg" alt="بدر">
+    <div class="card-body">
+      <span class="badge">تاريخ إسلامي</span>
+      <h3>بدر</h3>
+      <p>محافظة تاريخية تقع جنوب غرب المدينة.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/badr-old.jpg" alt="بدر قديمًا">
+    <div class="card-body">
+      <h3>بدر تاريخيًا</h3>
+      <p>شهدت غزوة بدر الكبرى في صدر الإسلام.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- خيبر -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/khaybar.jpg" alt="خيبر">
+    <div class="card-body">
+      <span class="badge">واحات</span>
+      <h3>خيبر</h3>
+      <p>محافظة تشتهر بالواحات والزراعة.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/khaybar-old.jpg" alt="خيبر قديمًا">
+    <div class="card-body">
+      <h3>خيبر تاريخيًا</h3>
+      <p>شهدت فتح خيبر في العهد النبوي.</p>
+    </div>
+  </div>
+</div></div>
+
+<!-- العيص -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/alays.jpg" alt="العيص"><div class="card-body">
+      <span class="badge">ساحل</span>
+      <h3>العيص</h3>
+      <p>محافظة تقع قرب ساحل البحر الأحمر.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/alays-old.jpg" alt="العيص قديمًا">
+    <div class="card-body">
+      <h3>العيص تاريخيًا</h3>
+      <p>  تُظهر قلعة الفرع، المعروفة أيضًا باسم "قصر البنت"، وهي معلم تاريخي يقع بالقرب من محافظة العيص . </p>
+    </div>
+  </div>
+</div></div>
+
+<!-- وادي الفرع -->
+<div class="flip-card"><div class="flip-inner">
+  <div class="flip-front">
+    <img src="images/wadi-alfara.jpg" alt="وادي الفرع">
+    <div class="card-body">
+      <span class="badge">أودية</span>
+      <h3>وادي الفرع</h3>
+      <p>محافظة تشتهر بالأودية والزراعة المحلية.</p>
+    </div>
+  </div>
+  <div class="flip-back">
+    <img src="images/wadi-alfara-old.jpg" alt="وادي الفرع قديمًا">
+    <div class="card-body">
+      <h3>وادي الفرع تاريخيًا</h3>
+      <p>من مناطق الاستقرار الزراعي حول المدينة المنورة.</p>
+    </div>
+  </div>
+</div></div>
+
+</div>
+
+<!-- زر الرجوع -->
+<div class="back-wrap">
+  <a href="regions.html" class="back-btn"> الرجوع إلى صفحة المناطق</a>
+</div>
+
+</div> <!-- نهاية container -->
+
+<footer>
+   مشروع يوم التأسيس – المنطقة الغربية
+</footer>
+
+<script>
+  // تشغيل دوران الكروت عند الضغط
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
