@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>يوم التأسيس السعودي</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --primary:#2f5d50;
+  --gold:#c9a24d;
+  --bg:#f6f4ef;
+  --text:#1f3724;
+  --muted:#6b7280;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;font-family:"Segoe UI",Tahoma,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+/* ===== Header Hero ===== */
+header{
+  min-height:70vh;
+  background:
+  linear-gradient(rgba(107, 74, 43, 0.918), rgba(107, 74, 43, 0.658)),
+        url("images/hero-bg.jpg");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.hero-box{
+  background:rgba(255,255,255,.12);
+  backdrop-filter: blur(6px);
+  border-radius:24px;
+  padding:50px 40px;
+  box-shadow:0 25px 50px rgba(0,0,0,.3);
+  max-width:800px;
+}
+
+.hero-box h1{
+  margin:0 0 10px;
+  font-size:42px;
+  letter-spacing:1px;
+  color: #EAD8C5;
+}
+
+.hero-box p{
+  margin:0 0 25px;
+  color:#EAD8C5;
+  font-size:18px;
+}
+
+.hero-box a{
+  display:inline-block;
+  background:linear-gradient(135deg,#c9a24d,#e3c36a);
+  color:#1f2937;
+  padding:14px 34px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s ease;
+}
+.hero-box a:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+/* ===== Sections ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 20px;
+
+  background: 
+    linear-gradient(rgba(245,255,238,0.9), rgba(255,255,255,0.8)),
+    url("images/section-bg.jpg") no-repeat center center;
+
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+.section-title h2{
+  margin:0;
+  font-size:32px;
+  color:#6B4E45;
+}
+.section-title p{
+  margin-top:8px;
+  color:var(--muted);
+}
+
+/* ===== Grid Cards ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(275px,1fr));
+  gap:25px;
+}
+
+.card{
+  position:relative;
+  background:#fff;
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+  transition:.35s ease;
+  text-decoration:none;
+  color:var(--text);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 25px 50px rgba(0,0,0,.25);
+}
+
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:20px;
+  text-align:center;
+}
+
+.card-body h3{
+  margin:0 0 8px;
+  font-size:22px;
+  color:#1f3724;
+}
+
+.card-body p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* Gold line */
+.card::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:4px;
+  background:linear-gradient(135deg,#c9a24d,#e3c36a);
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  color:#6b7280;
+  padding:30px;
+  font-size:13px;
+  background:#f8f6f0;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hero-box">
+    <h1>يــــــــوم بـــديــنــــــــــا</h1>
+    <p>   ثلاثة قرون من العز والفخر  </p>
+    <a href="#sections">ابدأ الرحلة</a>
+  </div>
+</header>
+
+<div class="container" id="sections">
+  <div class="section-title">
+    <h2>يوم المجد والفخر,كل عام والمملكة العربية السعودية في عز وتقدم </h2>
+    <p>تعرّف على تاريخ المملكة، ملوكها، مناطقها وأزيائها التراثية</p>
+  </div>
+
+  <div class="grid">
+
+    <a href="kings.html" class="card">
+      <img src="images/kings.jpg" alt="الملوك">
+      <div class="card-body">
+        <h3> الحكام</h3>
+        <p>سيرة ملوك الدولة السعودية ومسيرتهم التاريخية.</p>
+      </div>
+    </a>
+
+    <a href="regions.html" class="card">
+      <img src="images/regions.jpg" alt="المناطق">
+      <div class="card-body">
+        <h3> المناطق</h3>
+        <p>تعرف على مناطق المملكة ومعالمها وتاريخها.</p>
+      </div>
+    </a>
+
+    
+
+    <a href="history.html" class="card">
+      <img src="images/history.jpg" alt="التاريخ">
+      <div class="card-body">
+        <h3> التاريخ</h3>
+        <p>أهم الأحداث والمحطات التاريخية في الدولة السعودية.</p>
+      </div>
+    </a>
+
+  </div>
+</div><footer>
+  © 2026 مشروع يوم التأسيس | تم التصميم والتطوير بواسطة رهف الفيفي
+</footer>
+
+</body>
+</html>

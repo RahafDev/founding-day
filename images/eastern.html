@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>المنطقة الشرقية</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+:root{
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --primary:#2f5d50;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;font-family:"Segoe UI",Tahoma,Arial,sans-serif;}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.7;}
+
+header{
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;padding:40px 20px;text-align:center;
+}
+header h1{margin:0 0 10px;font-size:32px;}
+header p{margin:0;color:#e5f3ef}
+
+.container{max-width:1200px;margin:auto;padding:30px 20px 60px;}
+
+.back-wrap{margin-bottom:25px;text-align:center;}
+.back-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#513e16,#6b4e45);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:14px;
+  box-shadow:0 6px 15px rgba(0,0,0,.15);
+  transition:.25s ease;
+}
+.back-btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.25);}
+
+.section-title{
+  display:flex;align-items:center;gap:12px;margin:10px 0 20px;
+  border-right:6px solid var(--primary);padding-right:12px;
+}
+.section-title h2{margin:0;font-size:26px;color:var(--primary);}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:20px;
+}
+
+/* Flip + Hover Elevation */
+.flip-card{perspective:1200px;transition:transform .3s ease;}
+.flip-card:hover{transform:translateY(-8px);}
+.flip-inner{
+  position:relative;width:100%;height:340px;
+  transition:transform .7s;transform-style:preserve-3d;cursor:pointer;
+}
+.flip-card.active .flip-inner{transform:rotateY(180deg);}
+
+.flip-front,.flip-back{
+  position:absolute;width:100%;height:100%;backface-visibility:hidden;
+  background:var(--card);border-radius:var(--radius);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
+  border:1px solid var(--border);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:box-shadow .3s ease;
+}
+.flip-card:hover .flip-front,
+.flip-card:hover .flip-back{box-shadow:0 20px 45px rgba(0,0,0,0.25);}
+
+.flip-front img,.flip-back img{width:100%;height:170px;object-fit:cover;background:#ddd;}
+.card-body{padding:16px 18px 20px;}
+.card-body h3{margin:0 0 8px;font-size:18px;}
+.badge{
+  display:inline-block;font-size:12px;background:#eef6f3;color:var(--primary);
+  padding:4px 10px;border-radius:999px;margin-bottom:10px;
+}
+.card-body p{margin:0;color:var(--muted);font-size:14px;}
+.flip-back{transform:rotateY(180deg);background:#fdfdfb;}
+.flip-back .card-body p{color:#374151;}
+
+footer{text-align:center;color:#6b7280;padding:20px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>المنطقة الشرقية</h1>
+  <p>مدن ومحافظات شرق المملكة العربية السعودية وما تشتهر به</p>
+</header>
+
+<div class="container">
+
+  
+  <div class="section-title"><h2>📍 مدن ومحافظات المنطقة الشرقية</h2></div>
+
+  <div class="grid">
+
+    <!-- الدمام -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/dammam.jpg" alt="الدمام">
+        <div class="card-body">
+          <span class="badge">عاصمة المنطقة</span>
+          <h3>الدمام</h3>
+          <p>عاصمة المنطقة الشرقية، مركز إداري وتجاري وساحلي مهم.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/dammam-old.jpg" alt="الدمام قديمًا">
+        <div class="card-body">
+          <h3>الدمام تاريخيًا</h3>
+          <p>     تطورت مع اكتشاف النفط وأصبحت ميناءً ومركزًا حضريًا مهمًا في الشرق.  </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الأحساء -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/alahsa.jpg" alt="الأحساء">
+        <div class="card-body">
+          <span class="badge">واحة</span>
+          <h3>الأحساء</h3>
+          <p>أكبر واحة نخيل في العالم، تشتهر بالزراعة والتراث.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/alahsa-old.jpg" alt="الأحساء قديمًا">
+        <div class="card-body">
+          <h3>الأحساء تاريخيًا</h3>
+          <p>كانت مركزًا زراعيًا وتجاريًا قديمًا وممرًا للقوافل عبر القرون.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- حفر الباطن -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/hafar.jpg" alt="حفر الباطن">
+        <div class="card-body">
+          <span class="badge">شمال الشرقية</span>
+          <h3>حفر الباطن</h3>
+          <p>مدينة تخدم الطرق البرية وتشتهر بالتجارة والخدمات.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/hafar-old.jpg" alt="حفر الباطن قديمًا">
+        <div class="card-body">
+          <h3>حفر الباطن تاريخيًا</h3>
+          <p> سوق الفقع في حفر الباطن عام 1972م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الجبيل -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/jubail.jpg" alt="الجبيل">
+        <div class="card-body">
+          <span class="badge">صناعة</span>
+          <h3>الجبيل</h3>
+          <p>مدينة صناعية كبرى وميناء مهم على الخليج العربي.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/jubail-old.jpg" alt="الجبيل قديمًا">
+        <div class="card-body">
+          <h3>الجبيل تاريخيًا</h3>
+          <p>كانت بلدة ساحلية صغيرة للصيد والتجارة قبل النهضة الصناعية.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- القطيف -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/qatif.jpg" alt="القطيف">
+        <div class="card-body">
+          <span class="badge">ساحل</span>
+          <h3>القطيف</h3>
+          <p>تشتهر بالزراعة والبحر والتراث الساحلي.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/qatif-old.jpg" alt="القطيف قديمًا">
+        <div class="card-body">
+          <h3>القطيف تاريخيًا</h3>
+          <p>  هذه الصورة توثق مشهداً من الماضي في مدينة القطيف,
+تعود الصورة لعام 1952م تقريباً.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الخبر -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/khobar.jpg" alt="الخبر">
+        <div class="card-body">
+          <span class="badge">سياحة</span>
+          <h3>الخبر</h3>
+          <p>مدينة حديثة تشتهر بالكورنيش والخدمات والسياحة.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/khobar-old.jpg" alt="الخبر قديمًا">
+        <div class="card-body">
+          <h3>الخبر تاريخيًا</h3>
+          <p>نشأت مع بدايات النفط وتوسعت سريعًا كمركز حضري حديث (شارع الملك خالد) </p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- الخفجي -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/khafji.jpg" alt="الخفجي">
+        <div class="card-body">
+          <span class="badge">حدودية</span>
+          <h3>الخفجي</h3>
+          <p>مدينة حدودية تشتهر بالطاقة والصيد البحري.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/khafji-old.jpg" alt="الخفجي قديمًا">
+        <div class="card-body">
+          <h3>الخفجي تاريخيًا</h3>
+          <p>كانت منطقة ساحلية صغيرة ثم برزت مع اكتشافات الطاقة.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- رأس تنورة -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/ras-tanura.jpg" alt="رأس تنورة">
+        <div class="card-body">
+          <span class="badge">نفط</span>
+          <h3>رأس تنورة</h3>
+          <p>تضم واحدًا من أكبر موانئ تصدير النفط في العالم.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/ras-tanura-old.jpg" alt="رأس تنورة قديمًا">
+        <div class="card-body">
+          <h3>رأس تنورة تاريخيًا</h3>
+          <p>تحولت من رأس ساحلي بسيط إلى مركز عالمي لصناعة النفط.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- بقيق -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/abqaiq.jpg" alt="بقيق">
+        <div class="card-body">
+          <span class="badge">طاقة</span>
+          <h3>بقيق</h3>
+          <p>تشتهر بمنشآت معالجة النفط وموقعها الصناعي المهم.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/abqaiq-old.jpg" alt="بقيق قديمًا">
+        <div class="card-body">
+          <h3>بقيق تاريخيًا</h3>
+          <p> ألتقطت في عام 1955م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- النعيرية -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/nuairiyah.jpg" alt="النعيرية">
+        <div class="card-body">
+          <span class="badge">شرق نجد</span>
+          <h3>النعيرية</h3>
+          <p>محافظة تخدم الطرق البرية بين الشرق والوسط.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/nuairiyah-old.jpg" alt="النعيرية قديمًا">
+        <div class="card-body">
+          <h3>النعيرية تاريخيًا</h3>
+          <p> هذه الصورة توثق لحظة تاريخية في قصر الملك عبدالعزيز في بلدة نطاع عام 1930م.</p>
+        </div>
+      </div>
+    </div></div>
+
+    <!-- قرية العليا -->
+    <div class="flip-card"><div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/qaryat-alyolia.jpg" alt="قرية العليا">
+        <div class="card-body">
+          <span class="badge">شمال شرق</span>
+          <h3>قرية العليا</h3>
+          <p>محافظة تخدم الطرق بين السعودية والكويت.</p>
+        </div>
+      </div>
+      <div class="flip-back">
+        <img src="images/qaryat-alyolia-old.jpg" alt="قرية العليا قديمًا">
+        <div class="card-body">
+          <h3>قرية العليا تاريخيًا</h3>
+          <p>نشأت لخدمة القوافل والمسافرين في شمال الشرقية.</p>
+        </div>
+      </div>
+    </div></div>
+
+    
+
+    
+
+
+  </div>
+</div>
+<div class="back-wrap">
+    <a href="regions.html" class="back-btn"> الرجوع إلى صفحة المناطق</a>
+  </div>
+
+<footer> © 2026 مشروع يوم التأسيس | تم التصميم والتطوير بواسطة رهف الفيفي</footer>
+
+<script>
+document.querySelectorAll('.flip-card').forEach(card=>{
+  card.addEventListener('click',()=>{
+    card.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>

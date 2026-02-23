@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>حكام الدولة السعودية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+:root{
+  --brown:#6b4a2b;
+  --brown-2:#8b6a45;
+  --beige:#f3e8d6;
+  --bg:#f6f2ea;
+  --text:#3a2a1a;
+  --card:#ffffff;
+}
+ .caption{
+  text-align: center;
+  font-size: 13px;
+  color: #777;   /* رمادي خفيف */
+  margin: 6px 0 4px;
+}   
+
+*{
+  box-sizing:border-box;
+  font-family:"Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
+
+/* ===== Navbar ===== */
+.navbar{
+  background:linear-gradient(135deg, var(--brown), var(--brown-2));
+  color:var(--beige);
+  padding:14px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.navbar nav a{
+  color:var(--beige);
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:500;
+}
+
+.navbar nav a:hover{
+  color:#ffd27a;
+  text-decoration:none;
+}
+
+/* ===== Hero ===== */
+.hero{
+  min-height:40vh;
+  background:
+    linear-gradient(rgba(107,74,43,.6), rgba(107,74,43,.6)),
+    url("images/hero-bg.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+  text-align:center;
+  color:var(--beige);
+}
+
+.hero-box{
+  background:rgba(255,255,255,.18);
+  backdrop-filter: blur(6px);
+  border-radius:24px;
+  padding:40px 50px;
+  max-width:800px;
+  box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.hero-box h1{
+  margin:0 0 10px;
+  font-size:36px;
+}
+
+.hero-box p{
+  margin:0;
+  color:#f1e7d8;
+  font-size:18px;
+}
+
+/* ===== Container ===== */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin:50px 0 30px;
+}
+
+.section-title h2{
+  margin:0 0 10px;
+  font-size:26px;
+  color:var(--brown);
+}
+
+.section-title p{
+  margin:0;
+  color:#6b5a47;
+}
+
+/* ===== Grid Cards ===== */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(260px, 1fr));
+  gap:24px;
+}
+
+.card{
+  background:var(--card);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  transition:.25s ease;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:16px 18px 20px;
+}
+
+
+.card-body h3{
+  margin:0 0 6px;
+  color:#3f2309;
+}
+
+.period{
+  font-size:13px;
+  color:#000;
+  margin-bottom:8px;
+}
+
+.card-body p{
+  margin:0;
+  color:#4e4b4b;
+  font-size:14px;
+}
+
+/* ===== Back Button ===== */
+.back-home{
+  display:flex;
+  justify-content:center;
+  margin:40px 0 10px;
+}
+
+.back-btn{
+  background:linear-gradient(135deg, var(--brown-2), var(--brown));
+  color:var(--beige);
+  padding:12px 28px;
+  border-radius:14px;
+  text-decoration:none;
+  font-size:16px;
+  box-shadow:0 6px 15px rgba(0,0,0,.2);
+  transition:.25s ease;
+}
+
+.back-btn:hover{
+  transform: translateY(-2px);
+  box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+/* ===== Footer ===== */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#6b5a47;
+  font-size:14px;
+}
+
+
+.navbar nav a {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.navbar nav a.active,
+.navbar nav a.current {
+  border-bottom: none !important;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="history.html">التاريخ</a>
+    <a href="regions.html">المناطق</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-box">
+    <h1>حكام الدولة السعودية عبر العصور</h1>
+    <p>من الدولة السعودية الأولى إلى الدولة السعودية الثالثة (الحالية)</p>
+  </div>
+</section>
+
+<div class="container">
+
+  <!-- ===== الدولة السعودية الأولى ===== -->
+  <div class="section-title">
+    <h2>الدولة السعودية الأولى (1727م – 1818م)</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <img src="images/mohammed-bin-saud.jpg" alt="الإمام محمد بن سعود">
+      <div class="card-body">
+        <div class="caption">صورة تخيّلية</div>
+        <h3>الإمام محمد بن سعود</h3>
+        <div class="period">1727م – 1765م</div>
+        <p>مؤسس الدولة السعودية الأولى واتخذ الدرعية عاصمة لها.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/abdulaziz-bin-mohammed.jpg" alt="الإمام عبدالعزيز بن محمد">
+      <div class="card-body">
+        <div class="caption">صورة تخيّلية</div>
+        <h3>الإمام عبدالعزيز بن محمد</h3>
+        <div class="period">1765م – 1803م</div>
+        <p>واصل توسيع نفوذ الدولة وتعزيز قوتها.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/saud-bin-abdulaziz.jpg" alt="الإمام سعود بن عبدالعزيز">
+      <div class="card-body">
+        <div class="caption">صورة تخيّلية</div>
+        <h3>الإمام سعود بن عبدالعزيز</h3>
+        <div class="period">1803م – 1814م</div>
+        <p>بلغت الدولة في عهده أقصى اتساعها.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/abdullah-bin-saud.jpg" alt="الإمام عبدالله بن سعود">
+      <div class="card-body">
+        <div class="caption">صورة تخيّلية</div>
+        <h3>الإمام عبدالله بن سعود</h3>
+        <div class="period">1814م – 1818م</div>
+        <p>آخر حكام الدولة السعودية الأولى.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== الدولة السعودية الثانية ===== -->
+  <div class="section-title">
+    <h2>الدولة السعودية الثانية (1824م – 1891م)</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <img src="images/turki-bin-abdullah.jpg" alt="الإمام تركي بن عبدالله">
+      <div class="card-body">
+        <div class="caption">صورة تخيّلية</div>
+        <h3>الإمام تركي بن عبدالله</h3>
+        <div class="period">1824م – 1834م</div>
+        <p>مؤسس الدولة السعودية الثانية واتخذ الرياض عاصمة لها.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/faisal-bin-turki.jpg" alt="الإمام فيصل بن تركي">
+      <div class="card-body">
+        <div class="caption">صورة تخيّلية</div>
+        <h3>الإمام فيصل بن تركي</h3>
+        <div class="period">1834م – 1865م</div>
+        <p>عزّز استقرار الدولة السعودية الثانية.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/abdullah-bin-faisal.jpg" alt="الإمام عبدالله بن فيصل">
+      <div class="card-body">
+        <div class="caption">صورة تخيّلية</div>
+        <h3>الإمام عبدالله بن فيصل</h3>
+        <div class="period">1865م – 1889م</div>
+        <p>شهدت الدولة في عهده صراعات داخلية.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/abdulrahman-bin-faisal.jpg" alt="الإمام عبدالرحمن بن فيصل">
+      <div class="card-body">
+        <h3>الإمام عبدالرحمن بن فيصل</h3>
+        <div class="period">1889م – 1891م</div>
+        <p>آخر حكام الدولة السعودية الثانية.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== الدولة السعودية الثالثة ===== -->
+  <div class="section-title">
+    <h2>الدولة السعودية الثالثة (الحالية)</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <img src="images/king-abdulaziz.jpg" alt="الملك عبدالعزيز">
+      <div class="card-body">
+        <h3>الملك عبدالعزيز بن عبدالرحمن</h3>
+        <div class="period">1902م – 1953م</div>
+        <p>مؤسس المملكة العربية السعودية وموحدها.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/king-saud.jpg" alt="الملك سعود">
+      <div class="card-body">
+        <h3>الملك سعود بن عبدالعزيز</h3>
+        <div class="period">1953م – 1964م</div>
+        <p>اهتم بالتعليم والبنية التحتية.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/king-faisal.jpg" alt="الملك فيصل">
+      <div class="card-body">
+        <h3>الملك فيصل بن عبدالعزيز</h3>
+        <div class="period">1964م – 1975م</div>
+        <p>دعم القضايا الإسلامية واستخدم سلاح النفط.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/king-khalid.jpg" alt="الملك خالد">
+      <div class="card-body">
+        <h3>الملك خالد بن عبدالعزيز</h3>
+        <div class="period">1975م – 1982م</div>
+        <p>شهدت البلاد نهضة تنموية كبيرة.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/king-fahd.jpg" alt="الملك فهد">
+      <div class="card-body">
+        <h3>الملك فهد بن عبدالعزيز</h3>
+        <div class="period">1982م – 2005م</div>
+        <p>توسعة الحرمين الشريفين وتطوير الدولة.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/king-abdullah.jpg" alt="الملك عبدالله">
+      <div class="card-body">
+        <h3>الملك عبدالله بن عبدالعزيز</h3>
+        <div class="period">2005م – 2015م</div>
+        <p>برنامج الابتعاث والمشاريع الاقتصادية الكبرى.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/king-salman.jpg" alt="الملك سلمان">
+      <div class="card-body">
+        <h3>الملك سلمان بن عبدالعزيز</h3>
+        <div class="period">2015م – حتى الآن</div>
+        <p>إطلاق رؤية السعودية 2030 والتحول الوطني.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-home">
+    <a href="index.html" class="back-btn">الرجوع إلى الصفحة الرئيسية</a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 مشروع يوم التأسيس | تم التصميم والتطوير بواسطة رهف الفيفي
+</footer>
+
+</body>
+</html>
